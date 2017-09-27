@@ -3,12 +3,13 @@
 from datetime import date, timedelta
 
 class bond:
-    def __init__(self,cpn,cpnFreq,matDate,stlDate):
-        #self.cpn=cpn
-        #self.cpnFreq=cpnFreq
+    def __init__(self,matDate,stlDate,cpn=None,cpnFreq=None):
+        #def __init__(self,cpn,cpnFreq,matDate,stlDate):
         self.matDate=matDate
         self.stlDate=stlDate
         self.stlDate=self._getWeekday()
+        self.cpn=cpn
+        self.cpnFreq=cpnFreq
         #self.convFact=self.getCF()
 
         
@@ -25,13 +26,13 @@ class bond:
         it returns the original date
         '''
         months={1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'}
-        if self.stlDate.weekday()==5: # 5 = Saturday
+        if self.stlDate.isoweekday()==6: # 6 = Saturday
             print('Changed settle date from Saturday {0} {1}, {2} to Friday {3} {4}, {5}'
                 .format(months[self.stlDate.month],self.stlDate.day,self.stlDate.year,
                 months[(self.stlDate-timedelta(1)).month],(self.stlDate-timedelta(1)).day,
                 (self.stlDate-timedelta(1)).year))
             self.stlDate=self.stlDate-timedelta(1)
-        elif self.stlDate.weekday()==6: # 6 = Sunday
+        elif self.stlDate.isoweekday()==7: # 7 = Sunday
             print('Changed settle date from Sunday {0} {1}, {2} to Friday {3} {4}, {5}'
                 .format(months[self.stlDate.month],self.stlDate.day,self.stlDate.year,
                 months[(self.stlDate-timedelta(2)).month],(self.stlDate-timedelta(2)).day,
