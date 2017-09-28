@@ -61,6 +61,7 @@ class UST(bond):
     def bai(self,cpn,mat,stl):
         pCpn=self.prevCpn(stl)
         return self.cpn/2*100*((self.stlDate-pCpn).days/(self.nextCpn(stl)-pCpn).days)
+    
         
 class UST_Future():
     def __init__(self,CTD,expDate,firstDlvDate,bondLen=1):
@@ -112,7 +113,7 @@ class UST_Future():
         d = self.CTD.cpn / 0.06 * (1-c)
         return '%.4f' % round((a * (self.CTD.cpn/2+c+d) - b),4)
     
-    def bpr2(self,crv,stl=date.today()-timedelta(days=1)):
+    def bprFromDFCurve(self,crv,stl=date.today()-timedelta(days=1)):
         '''
         Takes a discount factor curve and calculates a (synthetic) bond price from it
         crv=discount factor curve
@@ -161,8 +162,8 @@ class UST_Future():
         date2=date(int(arrayDate[2][:4]),int(arrayDate[2][5:7]),int(arrayDate[2][8:10]))
         stubRate=360*(1-1/float(arrayTW[2])) / (date2-date1).days
         adjFactor=exp(stubRate*(stl-date1).days/360)
-        bpr2=(100*invPrice-self.CTD.bai(self.CTD.cpn,self.CTD.matDate,stl))*adjFactor
-        return bpr2
+        bPrice=(100*invPrice-self.CTD.bai(self.CTD.cpn,self.CTD.matDate,stl))*adjFactor
+        return bPrice
                        
     
     def dfcurve(self,as_of,stl_date, stub_rate,mat_dates, mat_rates):
@@ -179,3 +180,26 @@ class UST_Future():
             tw[i] = (1 + (100 - mat_rates[i-1])/100 * (mat_dates[i-2] - mat_dates[i-1]).days/360) * tw[i-1]
             crv=crv + str(mat_dates[i-1]) + ',' + str(tw[i]) + ':'
         return crv
+    
+    def bimprepo(self,qtdPrice,futPrice,delDate):
+        numCpns=self.CTD.numCoupons()
+        nextCpn=self.CTD.nextCpn(self.stlDate)
+        invPrice=futPrice*self.CF+self.CTD.bai(self.CTD.cpn,self.CTD.matDate,delDate)
+        purPrice=qtdPrice+self.CTD.bai(self.CTD.cpn,self.CTD.matDate,self.CTD.stlDate)
+        n=(delDate-self.CTD.stlDate).days
+        if numCpns==0:
+            return (invPrice/purPrice-1)*360/n
+        elif numCpns==1:
+            t1=(nextCpn-self.CTD.stlDate).days/360
+            t2=(delDate-nextCpn).days/360
+            a=purPrice*t1*t2
+            b=purPrice*t1+purPrice*t2 - self.CTD.cpn/2*100*t2
+            c=purPrice-self.CTD.cpn/2*100 - invPrice
+            r1=(-b+(b**2-4*a*c)**0.5) / (2*a)
+            r2=(-b-(b**2-4*a*c)**0.5) / (2*a)
+            if abs(r1-self.CTD.cpn/2*100)<abs(r2-self.CTD.cpn/2*100):
+                return r1
+            else: return r2
+        elif numCpns==2:
+            pass
+        else: return 'Cannot calculate implied repo rate with 3 or more intervening coupons'
