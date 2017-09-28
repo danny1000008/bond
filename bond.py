@@ -72,14 +72,14 @@ class bond:
     def bprice(self,yld):
         tempPrice=0.0
         cpnDate=self.prevCpn(self.stlDate)
-        DF_Time=(cpnDate-self.stlDate).days
+        #DF_Time=(cpnDate-self.stlDate).days
         while cpnDate<self.matDate:
             cpnDate = self.nextCpn(cpnDate)
             #AI_Time = (self.matDate - cpnDate).days
             DF_Time=(cpnDate-self.stlDate).days
-            PV_Cpn=self.cpn/self.cpnFreq*100/(1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365)
+            PV_Cpn=self.cpn/self.cpnFreq*100/((1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365))
             tempPrice=tempPrice+PV_Cpn
-        PV_Par=100/(1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365)
+        PV_Par=100/((1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365))
         tempPrice = tempPrice + PV_Par-self.bai(self.cpn, self.matDate, self.stlDate)
         return tempPrice
     

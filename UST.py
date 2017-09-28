@@ -3,6 +3,7 @@
 from bond import bond
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta
+from math import exp
 
 class UST(bond):
     def __init__(self,matDate,stlDate,cpn,cpnFreq):
@@ -12,7 +13,7 @@ class UST(bond):
         self.cpn=cpn
         self.cpnFreq=cpnFreq
         
-    def numCoupons(self, basis):
+    def numCoupons(self, basis='A/A'):
         cpnIndex=0
         tempDate=self.nextCpn(self.stlDate)
         while tempDate <= self.matDate:
@@ -111,8 +112,58 @@ class UST_Future():
         d = self.CTD.cpn / 0.06 * (1-c)
         return '%.4f' % round((a * (self.CTD.cpn/2+c+d) - b),4)
     
-    def bpr2(self,crv,stl=date.today().day-1):
-        pass
+    def bpr2(self,crv,stl=date.today()-timedelta(days=1)):
+        '''
+        Takes a discount factor curve and calculates a (synthetic) bond price from it
+        crv=discount factor curve
+        stl=settlement date
+        '''
+        arrayDate=list()
+        arrayTW=list()
+        arrayCpnDates=list()
+        while len(crv)>1:
+            substrLen=crv.find(',')
+            arrayDate.append(crv[:substrLen])
+            print('arrayDate',arrayDate)
+            crv=crv[-(len(crv)-substrLen-1):]
+            print('crv',crv)
+            substrLen=crv.find(':')
+            arrayTW.append(crv[:(substrLen)])
+            print('arrayTW',arrayTW)
+            crv=crv[-(len(crv)-substrLen):]
+            print('crv',crv)
+            crv=crv[-(len(crv)-1):]
+            print('crv',crv)
+        numCpns=UST.numCoupons(self.CTD)
+        print('numCpns',numCpns)
+        tempDate=stl
+        for i in range(numCpns):
+            arrayCpnDates.append(self.CTD.nextCpn(tempDate))
+            tempDate=arrayCpnDates[i]+timedelta(days=1)
+            print('arrayCpnDates',arrayCpnDates)
+        invPrice=0.0
+        pvPmt=0.0
+        for j in range(len(arrayCpnDates)):
+            tempDate=arrayCpnDates[j]
+            print('arrayDate',arrayDate[i+1],'tempDate',tempDate)
+            for i in range(len(arrayDate)-1):
+                date1=date(int(arrayDate[i][:4]),int(arrayDate[i][5:7]),int(arrayDate[i][8:10]))
+                date2=date(int(arrayDate[i+1][:4]),int(arrayDate[i+1][5:7]),int(arrayDate[i+1][8:10]))
+                print('i',i,'date1',date1,',date2',date2)
+                if (date2-tempDate).days>=0 and (date1-tempDate).days<=0:
+                    pvPmt=self.CTD.cpn/2*((1/float(arrayTW[i])*(date2-tempDate).days +
+                    1/float(arrayTW[i+1])*(tempDate-date1).days)) / (date2-date1).days
+                    invPrice=invPrice+pvPmt
+                    break
+        pvPmt=pvPmt/(self.CTD.cpn/2)
+        invPrice=invPrice+pvPmt
+        date1=date(int(arrayDate[1][:4]),int(arrayDate[1][5:7]),int(arrayDate[1][8:10]))
+        date2=date(int(arrayDate[2][:4]),int(arrayDate[2][5:7]),int(arrayDate[2][8:10]))
+        stubRate=360*(1-1/float(arrayTW[2])) / (date2-date1).days
+        adjFactor=exp(stubRate*(stl-date1).days/360)
+        bpr2=(100*invPrice-self.CTD.bai(self.CTD.cpn,self.CTD.matDate,stl))*adjFactor
+        return bpr2
+                       
     
     def dfcurve(self,as_of,stl_date, stub_rate,mat_dates, mat_rates):
         '''creates a discount factor curve string starting from date as_of 
