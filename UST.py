@@ -165,12 +165,12 @@ class UST_Future():
            dates (as strings) and discount factors. The pairs are colon (:) separated
         '''
         crv=str(as_of) + ",1:"
-        tw=[None] * 40
-        tw[0]=1 + stub_rate * (as_of - stl_date).days/360
-        tw[1]=1 + stub_rate * (stl_date - mat_dates[0]).days/360
+        tw=[None] * 42
+        tw[0]=1 + stub_rate * (stl_date-as_of).days/360
+        tw[1]=1 + stub_rate * (mat_dates[0]-stl_date).days/360
         crv=crv + str(stl_date) + ',' + str(tw[0]) + ':' + str(mat_dates[0]) + ',' + str(tw[1]) + ':'
         for i in self.CTD._incRange(2,len(mat_dates)):
-            tw[i] = (1 + (100 - mat_rates[i-1])/100 * (mat_dates[i-2] - mat_dates[i-1]).days/360) * tw[i-1]
+            tw[i] = (1 + (100 - mat_rates[i-1])/100 * (mat_dates[i-1] - mat_dates[i-2]).days/360) * tw[i-1]
             crv=crv + str(mat_dates[i-1]) + ',' + str(tw[i]) + ':'
         return crv
     

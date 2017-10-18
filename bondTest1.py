@@ -2,6 +2,21 @@ import unittest
 from datetime import date
 from UST import UST, UST_Future
 from _datetime import timedelta
+import openpyxl
+
+def loadEDSettles(self,stl_date=date(year=date.today().year,month=date.today().month,day=date.today().day)):
+        wb=openpyxl.load_workbook('C:/Users/danBackup/eclipse-workspace/sendTEDs/tedSettleCalc2016.xlsm',data_only=True)
+        sheet=wb.get_sheet_by_name(str(stl_date.year))
+        # dtOfEDSettles is a time delta value in MS Excel format
+        dtOfEDSettles=stl_date-date(1899,12,31)
+        EDSettles=[]
+        for i in range(1,sheet.max_row):
+            if sheet.cell(row=i,column=1).internal_value==dtOfEDSettles.days:
+                settleRow=i
+                break
+        for j in range(6,46):
+            EDSettles.append(sheet.cell(row=i,column=j).internal_value)
+        return EDSettles
 
 def main():
     stlDateZ72s5s=date(2018,1,4)
@@ -16,8 +31,17 @@ def main():
     b6=UST(date(2024,11,15),stlDateH810s,0.0225,2)
     b7=UST(date(2027,5,15),stlDateZ710s,0.02375,2)
     b8=UST(date(2027,8,15),stlDateH810s,0.0225,2)
-    matDates=(date(2017,12,18),date(2018,3,18),date(2018,6,19),date(2018,9,18))
-    matRates=(98.685,98.6,98.54,98.49)
+    matDates=(date(2018,3,20),date(2018,6,21),date(2018,9,20),date(2018,12,19),
+              date(2019,3,19),date(2019,6,20),date(2019,9,19),date(2019,12,18),
+              date(2020,3,18),date(2020,6,18),date(2020,9,17),date(2020,12,16),
+              date(2021,3,16),date(2021,6,17),date(2021,9,16),date(2021,12,15),
+              date(2022,3,15),date(2022,6,16),date(2022,9,15),date(2022,12,21),
+              date(2023,3,21),date(2023,6,15),date(2023,9,21),date(2023,12,20),
+              date(2024,3,20),date(2024,6,20),date(2024,9,19),date(2024,12,18),
+              date(2025,3,18),date(2025,6,19),date(2025,9,18),date(2025,12,17),
+              date(2026,3,17),date(2026,6,18),date(2026,9,17),date(2026,12,16),
+              date(2027,3,17),date(2027,6,16),date(2027,9,15),date(2027,12,15))
+    matRates=loadEDSettles(date(2017,10,17))
     TUZ7=UST_Future(b1,stlDateZ72s5s,date(2017,12,1),1)
     FVZ7=UST_Future(b2,stlDateZ72s5s,date(2017,12,1),1)
     TYZ7=UST_Future(b3,stlDateZ710s,date(2017,12,1),2)
@@ -27,8 +51,8 @@ def main():
     TNZ7=UST_Future(b7,stlDateZ710s,date(2017,12,1),2)
     TNH8=UST_Future(b8,stlDateH810s,date(2018,3,1),2)
     
-    dlvDt1=date(2017,12,1)
-    dlvDt2=date(2018,3,1)
+    dlvDt1=date(2017,12,1) # 1st day of delivery month for front contract
+    dlvDt2=date(2018,3,1) # 1st day of delivery month for back contract
     print('TUZ7 CF=',TUZ7.CF)
     print('FVZ7 CF=',FVZ7.CF)
     print('TYZ7 CF=',TYZ7.CF)
@@ -37,9 +61,9 @@ def main():
     print('FVH8 CF=',FVH8.CF)
     print('TYH8 CF=',TYH8.CF)
     print('TNH8 CF=',TNH8.CF)
-    #TUZ7Crv=TUZ7.dfcurve(date(2017,10,18), date(2017,10,19), 0.012, matDates, matRates)
-    #print(TUZ7Crv)
-    #print(TUZ7.bprFromDFCurve(TUZ7Crv, stlDateZ72s5s))
+    TUZ7Crv=TUZ7.dfcurve(date(2017,10,17), date(2017,10,18), (100-matRates[0])/100, matDates, matRates)
+    print(TUZ7Crv)
+    print(TUZ7.bprFromDFCurve(TUZ7Crv, stlDateZ72s5s))
     #print(TUZ7.bimprepo(100.5, 108, date(2017,12,29)))
     #print('b1 previous coupon date',b1.prevCpn(stlDate))
     #print('b1 next coupon date',b1.nextCpn(stlDate))
