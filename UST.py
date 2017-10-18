@@ -7,6 +7,7 @@ from math import exp
 
 class UST(bond):
     def __init__(self,matDate,stlDate,cpn,cpnFreq):
+        # We will start by only looking at US Treasuries with coupon payments (no zero-coupon bonds) 
         self.matDate=matDate
         self.stlDate=stlDate
         self.stlDate=self._getWeekday()
@@ -111,7 +112,8 @@ class UST_Future():
         a = 1 / 1.03**(v/6)
         b = self.CTD.cpn / 2 * ((6 - v)/6)
         d = self.CTD.cpn / 0.06 * (1-c)
-        return '%.4f' % round((a * (self.CTD.cpn/2+c+d) - b),4)
+        return round((a * (self.CTD.cpn/2+c+d) - b),4)
+    
     
     def bprFromDFCurve(self,crv,stl=date.today()-timedelta(days=1)):
         '''
@@ -125,32 +127,23 @@ class UST_Future():
         while len(crv)>1:
             substrLen=crv.find(',')
             arrayDate.append(crv[:substrLen])
-            print('arrayDate',arrayDate)
             crv=crv[-(len(crv)-substrLen-1):]
-            print('crv',crv)
             substrLen=crv.find(':')
             arrayTW.append(crv[:(substrLen)])
-            print('arrayTW',arrayTW)
             crv=crv[-(len(crv)-substrLen):]
-            print('crv',crv)
             crv=crv[-(len(crv)-1):]
-            print('crv',crv)
         numCpns=UST.numCoupons(self.CTD)
-        print('numCpns',numCpns)
         tempDate=stl
         for i in range(numCpns):
             arrayCpnDates.append(self.CTD.nextCpn(tempDate))
             tempDate=arrayCpnDates[i]+timedelta(days=1)
-            print('arrayCpnDates',arrayCpnDates)
         invPrice=0.0
         pvPmt=0.0
         for j in range(len(arrayCpnDates)):
             tempDate=arrayCpnDates[j]
-            print('arrayDate',arrayDate[i+1],'tempDate',tempDate)
             for i in range(len(arrayDate)-1):
                 date1=date(int(arrayDate[i][:4]),int(arrayDate[i][5:7]),int(arrayDate[i][8:10]))
                 date2=date(int(arrayDate[i+1][:4]),int(arrayDate[i+1][5:7]),int(arrayDate[i+1][8:10]))
-                print('i',i,'date1',date1,',date2',date2)
                 if (date2-tempDate).days>=0 and (date1-tempDate).days<=0:
                     pvPmt=self.CTD.cpn/2*((1/float(arrayTW[i])*(date2-tempDate).days +
                     1/float(arrayTW[i+1])*(tempDate-date1).days)) / (date2-date1).days
@@ -183,7 +176,7 @@ class UST_Future():
     
     def bimprepo(self,qtdPrice,futPrice,delDate):
         numCpns=self.CTD.numCoupons()
-        nextCpn=self.CTD.nextCpn(self.stlDate)
+        nextCpn=self.CTD.nextCpn(self.CTD.stlDate)
         invPrice=futPrice*self.CF+self.CTD.bai(self.CTD.cpn,self.CTD.matDate,delDate)
         purPrice=qtdPrice+self.CTD.bai(self.CTD.cpn,self.CTD.matDate,self.CTD.stlDate)
         n=(delDate-self.CTD.stlDate).days
@@ -201,5 +194,21 @@ class UST_Future():
                 return r1
             else: return r2
         elif numCpns==2:
-            pass
+            nextCpn2=self.CTD.nextCpn(nextCpn+timedelta(days=1))
+            t1=(nextCpn-self.CTD.stlDate).days/360
+            t2=(nextCpn2-nextCpn).days/360
+            t3=(self.expDate-nextCpn2).days/360
+            a=purPrice*t1*t2*t3
+            b=purPrice*t1*t2 + purPrice*t1*t3 + purPrice*t2*t3 - self.CTD.cpn/2*100*t2*t3
+            c=purPrice*t1 + purPrice*t2 + purPrice*t3 - self.CTD.cpn/2*100*t2 - self.CTD.cpn*100*t3
+            d=purPrice - self.CTD.cpn*100 - invPrice
+            # 10 iterations of Newton's Method to approximate implied repo rate, which involves
+            # solving a cubic equation
+            A_old=self.CTD.cpn
+            for i in range(10):
+                f_A_old=a*A_old**3+b*A_old**2+c*A_old+d
+                df_A_old=3*a*A_old**2+2*b*A_old+c
+                A_new=A_old-f_A_old/df_A_old
+                A_old=A_new
+            return A_new
         else: return 'Cannot calculate implied repo rate with 3 or more intervening coupons'

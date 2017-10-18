@@ -10,7 +10,6 @@ class bond:
         self.stlDate=self._getWeekday()
         self.cpn=cpn
         self.cpnFreq=cpnFreq
-        #self.convFact=self.getCF()
 
         
     def _incRange(self,start,stop,step=1):
@@ -54,7 +53,6 @@ class bond:
         # do 10 iterations of Newton's Method to approximate yield to maturity
         for i in range(10):
             r_old=r_new
-            #P_old=P_new
             P_new=0
             dP_new=0
             for j in self._incRange(1,numCpns):
@@ -72,10 +70,8 @@ class bond:
     def bprice(self,yld):
         tempPrice=0.0
         cpnDate=self.prevCpn(self.stlDate)
-        #DF_Time=(cpnDate-self.stlDate).days
         while cpnDate<self.matDate:
             cpnDate = self.nextCpn(cpnDate)
-            #AI_Time = (self.matDate - cpnDate).days
             DF_Time=(cpnDate-self.stlDate).days
             PV_Cpn=self.cpn/self.cpnFreq*100/((1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365))
             tempPrice=tempPrice+PV_Cpn
@@ -97,7 +93,6 @@ class bond:
     
 def main():
     stlDate=date(2017,10,4)
-    #stlDate=date.today()-timedelta(1)
     b1=bond(0.01625,2,date(2019,6,30),stlDate)
     b2=bond(0.0175,2,date(2021,11,30),stlDate)
     b3=bond(0.025,2,date(2024,5,15),stlDate)
