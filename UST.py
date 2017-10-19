@@ -148,13 +148,20 @@ class UST_Future():
                     pvPmt=self.CTD.cpn/2*((1/float(arrayTW[i])*(date2-tempDate).days +
                     1/float(arrayTW[i+1])*(tempDate-date1).days)) / (date2-date1).days
                     invPrice=invPrice+pvPmt
+                    print('cpn/2=',self.CTD.cpn/2)
+                    print(arrayTW[i],date2,tempDate,1.0/float(arrayTW[i])*(date2-tempDate).days)
+                    print(1/float(arrayTW[i+1])*(tempDate-date1).days)
+                    print(pvPmt)
                     break
         pvPmt=pvPmt/(self.CTD.cpn/2)
+        print('last pmt=',pvPmt)
         invPrice=invPrice+pvPmt
-        date1=date(int(arrayDate[1][:4]),int(arrayDate[1][5:7]),int(arrayDate[1][8:10]))
-        date2=date(int(arrayDate[2][:4]),int(arrayDate[2][5:7]),int(arrayDate[2][8:10]))
-        stubRate=360*(1-1/float(arrayTW[2])) / (date2-date1).days
+        date1=date(int(arrayDate[0][:4]),int(arrayDate[0][5:7]),int(arrayDate[0][8:10]))
+        date2=date(int(arrayDate[1][:4]),int(arrayDate[1][5:7]),int(arrayDate[1][8:10]))
+        stubRate=360*(1-1/float(arrayTW[1])) / (date2-date1).days
+        print('stub=',stubRate)
         adjFactor=exp(stubRate*(stl-date1).days/360)
+        print('adj factor=',adjFactor)
         bPrice=(100*invPrice-self.CTD.bai(self.CTD.cpn,self.CTD.matDate,stl))*adjFactor
         return bPrice
                        
@@ -167,7 +174,7 @@ class UST_Future():
         crv=str(as_of) + ",1:"
         tw=[None] * 42
         tw[0]=1 + stub_rate * (stl_date-as_of).days/360
-        tw[1]=1 + stub_rate * (mat_dates[0]-stl_date).days/360
+        tw[1]=(1 + stub_rate * (mat_dates[0]-stl_date).days/360)*tw[0]
         crv=crv + str(stl_date) + ',' + str(tw[0]) + ':' + str(mat_dates[0]) + ',' + str(tw[1]) + ':'
         for i in self.CTD._incRange(2,len(mat_dates)):
             tw[i] = (1 + (100 - mat_rates[i-1])/100 * (mat_dates[i-1] - mat_dates[i-2]).days/360) * tw[i-1]

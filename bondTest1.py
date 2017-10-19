@@ -31,7 +31,7 @@ def main():
     b6=UST(date(2024,11,15),stlDateH810s,0.0225,2)
     b7=UST(date(2027,5,15),stlDateZ710s,0.02375,2)
     b8=UST(date(2027,8,15),stlDateH810s,0.0225,2)
-    matDates=(date(2018,3,20),date(2018,6,21),date(2018,9,20),date(2018,12,19),
+    matDatesZ7=(date(2018,3,20),date(2018,6,21),date(2018,9,20),date(2018,12,19),
               date(2019,3,19),date(2019,6,20),date(2019,9,19),date(2019,12,18),
               date(2020,3,18),date(2020,6,18),date(2020,9,17),date(2020,12,16),
               date(2021,3,16),date(2021,6,17),date(2021,9,16),date(2021,12,15),
@@ -41,7 +41,18 @@ def main():
               date(2025,3,18),date(2025,6,19),date(2025,9,18),date(2025,12,17),
               date(2026,3,17),date(2026,6,18),date(2026,9,17),date(2026,12,16),
               date(2027,3,17),date(2027,6,16),date(2027,9,15),date(2027,12,15))
-    matRates=loadEDSettles(date(2017,10,17))
+    matRatesZ7=loadEDSettles(date(2017,10,18))
+    matDatesH8=(date(2018,6,21),date(2018,9,20),date(2018,12,19),
+              date(2019,3,19),date(2019,6,20),date(2019,9,19),date(2019,12,18),
+              date(2020,3,18),date(2020,6,18),date(2020,9,17),date(2020,12,16),
+              date(2021,3,16),date(2021,6,17),date(2021,9,16),date(2021,12,15),
+              date(2022,3,15),date(2022,6,16),date(2022,9,15),date(2022,12,21),
+              date(2023,3,21),date(2023,6,15),date(2023,9,21),date(2023,12,20),
+              date(2024,3,20),date(2024,6,20),date(2024,9,19),date(2024,12,18),
+              date(2025,3,18),date(2025,6,19),date(2025,9,18),date(2025,12,17),
+              date(2026,3,17),date(2026,6,18),date(2026,9,17),date(2026,12,16),
+              date(2027,3,17),date(2027,6,16),date(2027,9,15),date(2027,12,15))
+    matRatesH8=matRatesZ7[1:40]
     TUZ7=UST_Future(b1,stlDateZ72s5s,date(2017,12,1),1)
     FVZ7=UST_Future(b2,stlDateZ72s5s,date(2017,12,1),1)
     TYZ7=UST_Future(b3,stlDateZ710s,date(2017,12,1),2)
@@ -61,9 +72,21 @@ def main():
     print('FVH8 CF=',FVH8.CF)
     print('TYH8 CF=',TYH8.CF)
     print('TNH8 CF=',TNH8.CF)
-    TUZ7Crv=TUZ7.dfcurve(date(2017,10,17), date(2017,10,18), (100-matRates[0])/100, matDates, matRates)
+    TUZ7Crv=TUZ7.dfcurve(date(2017,10,18), date(2017,10,19), (100-matRatesZ7[0])/100, matDatesZ7, matRatesZ7)
     print(TUZ7Crv)
-    print(TUZ7.bprFromDFCurve(TUZ7Crv, stlDateZ72s5s))
+    EDBond=TUZ7.bprFromDFCurve(TUZ7Crv, stlDateZ72s5s)
+    print(EDBond)
+    print(b1.byld(EDBond))
+    TUH8Crv=TUH8.dfcurve(date(2017,10,18), date(2017,10,19), (100-matRatesH8[0])/100, matDatesH8, matRatesH8)
+    EDBondTUH8=TUH8.bprFromDFCurve(TUH8Crv, stlDateH82s5s)
+    print(EDBondTUH8)
+    print(b4.byld(EDBondTUH8))
+    '''
+    FVZ7Crv=FVZ7.dfcurve(date(2017,10,18), date(2017,10,19), (100-matRatesZ7[0])/100, matDatesZ7, matRatesZ7)
+    print(FVZ7.bprFromDFCurve(FVZ7Crv, stlDateZ72s5s))
+    FVH8Crv=FVH8.dfcurve(date(2017,10,18), date(2017,10,19), (100-matRatesH8[0])/100, matDatesH8, matRatesH8)
+    print(FVH8.bprFromDFCurve(FVH8Crv, stlDateH82s5s))
+    '''
     #print(TUZ7.bimprepo(100.5, 108, date(2017,12,29)))
     #print('b1 previous coupon date',b1.prevCpn(stlDate))
     #print('b1 next coupon date',b1.nextCpn(stlDate))
