@@ -15,6 +15,7 @@ class UST(bond):
         self.cpnFreq=cpnFreq
         
     def numCoupons(self, basis='A/A'):
+        # Day count basis = actual/actual. I will add other day count options later
         cpnIndex=0
         tempDate=self.nextCpn(self.stlDate)
         while tempDate <= self.matDate:
@@ -148,20 +149,13 @@ class UST_Future():
                     pvPmt=self.CTD.cpn/2*((1/float(arrayTW[i])*(date2-tempDate).days +
                     1/float(arrayTW[i+1])*(tempDate-date1).days)) / (date2-date1).days
                     invPrice=invPrice+pvPmt
-                    print('cpn/2=',self.CTD.cpn/2)
-                    print(arrayTW[i],date2,tempDate,1.0/float(arrayTW[i])*(date2-tempDate).days)
-                    print(1/float(arrayTW[i+1])*(tempDate-date1).days)
-                    print(pvPmt)
                     break
         pvPmt=pvPmt/(self.CTD.cpn/2)
-        print('last pmt=',pvPmt)
         invPrice=invPrice+pvPmt
         date1=date(int(arrayDate[0][:4]),int(arrayDate[0][5:7]),int(arrayDate[0][8:10]))
         date2=date(int(arrayDate[1][:4]),int(arrayDate[1][5:7]),int(arrayDate[1][8:10]))
         stubRate=360*(1-1/float(arrayTW[1])) / (date2-date1).days
-        print('stub=',stubRate)
         adjFactor=exp(stubRate*(stl-date1).days/360)
-        print('adj factor=',adjFactor)
         bPrice=(100*invPrice-self.CTD.bai(self.CTD.cpn,self.CTD.matDate,stl))*adjFactor
         return bPrice
                        

@@ -4,7 +4,6 @@ from datetime import date, timedelta
 
 class bond:
     def __init__(self,matDate,stlDate,cpn=None,cpnFreq=None):
-        #def __init__(self,cpn,cpnFreq,matDate,stlDate):
         self.matDate=matDate
         self.stlDate=stlDate
         self.stlDate=self._getWeekday()
@@ -13,6 +12,7 @@ class bond:
 
         
     def _incRange(self,start,stop,step=1):
+        # an iterator function that iterates from start to stop, inclusive
         i=start
         while i <= stop:
             yield i
@@ -40,7 +40,7 @@ class bond:
         return self.stlDate
 
     def byld(self,price):
-        basis='A/A'
+        basis='A/A' # actual/actual day count. In the future I will add other day count options
         numCpns=self.numCoupons(basis)
         nextCpnDate=self.nextCpn(self.stlDate)
         daysBetwCpns=(nextCpnDate-self.prevCpn(self.stlDate)).days
@@ -68,6 +68,8 @@ class bond:
         return r_new
     
     def bprice(self,yld):
+        ''' Calculates the price of a bond from its yield to maturity
+        '''
         tempPrice=0.0
         cpnDate=self.prevCpn(self.stlDate)
         while cpnDate<self.matDate:
@@ -103,7 +105,7 @@ def main():
     b8=bond(0.02375,2,date(2027,5,15),stlDate)
     matDates=(date(2017,12,18),date(2018,3,18),date(2018,6,19),date(2018,9,18))
     matRates=(98.685,98.6,98.54,98.49)
-    print(b1.dfcurve(date(2017,9,11), date(2017,9,12), 0.012, matDates, matRates))
+    print(b1.dfcurve(date(2017,9,11), date(2017,9,12), 0.0136, matDates, matRates))
     print('b1 previous coupon date',b1.prevCpn(stlDate))
     print('b1 next coupon date',b1.nextCpn(stlDate))
     print('b1 number of coupons remaining:',b1.numCoupons('A/A'))
