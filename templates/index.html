@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>Home</title></head>
+<link rel=stylesheet type=text/css href="{{ url_for('static',filename='style.css') }}">
+<body>
+<h1>CME UST Futures</h1>
+<h2>Pick a contract</h2>
+<form method="POST">
+	<select name="futCon">
+		<option value="TU">TU</option>
+		<option value="FV">FV</option>
+		<option value="TY">TY</option>
+	</select>
+	<input type="submit" value="Submit">
+</form>
+	
