@@ -3,14 +3,33 @@
 <head><title>Home</title></head>
 <link rel=stylesheet type=text/css href="{{ url_for('static',filename='style.css') }}">
 <body>
-<h1>CME UST Futures</h1>
+<h1>CME US Treasury Futures</h1>
 <h2>Pick a contract</h2>
+<div>
 <form method="POST">
 	<select name="futCon">
-		<option value="TU">TU</option>
-		<option value="FV">FV</option>
-		<option value="TY">TY</option>
+		<option value="TU">TU - 2 Year</option>
+		<option value="FV">FV - 5 Year</option>
+		<option value="TY">TY - 10 Year</option>
+		<option value="TN">TN - Ultra 10 Year</option>
+		<option value="US">US - Bond</option>
+		<option value="UB">UB - Ultra Bond</option>
 	</select>
 	<input type="submit" value="Submit">
 </form>
-	
+<br><br><br><hr class="leftJust">
+</div>
+<div><h2>About CME US Treasury Futures</h2>
+<p class="leftJust">
+CME US Treasury futures contracts each have a "basket" of US Treasury securities that
+are eligible to be delivered into the futures contract during the delivery/expiration month.
+The basket depends on the futures contract's specifications, which include limitations on
+initial term to maturity and remaining time to maturity.
+</p><br><br><br>
+</div>
+<div class="footer">
+    <hr class="center96Pct">
+    <hr class="center96Pct">
+    <p>Designed by <b>Danny Wagstaff</b> in 2018
+    </p>
+</div>
