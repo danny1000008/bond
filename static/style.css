@@ -1,1 +1,27 @@
-body	{background: azure}
+body	{
+    background: azure
+}
+p   {
+	font-family: Monospace;
+}
+
+.leftJust {
+    margin-left: 2%;
+    margin-right: 50%;
+}
+.centerJust {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottomJust {
+    margin-top: 90%;
+}
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+.center96Pct {
+    margin-left: 2%;
+    margin-right: 2%;
+}
