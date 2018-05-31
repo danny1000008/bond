@@ -15,9 +15,13 @@ def index():
 @app.route('/', methods = ['POST'])
 def index_post():
     FC = request.form['futCon'] # futures contract chosen
+    FE = request.form['expiration'] # expiration month
+    print('FC, FE=', FC, FE)
     listTsyData = contractBasket.Basket() # class Basket will hold UST securities list
-    listTsyData.getBasket(FC)
-    return render_template('CTDList.html', listData=listTsyData.value, FC = FC, mat = listTsyData.getConAbbr())
+    #listTsyData.getBasket(FC, FE)
+    listTsyData.getBasket(FC, FE)
+    return render_template('CTDList.html', listData=listTsyData.value, FC = FC,
+        FE = FE, mat = listTsyData.getConAbbr(FC, FE))
 
 if __name__ == "__main__":
     app.run()
