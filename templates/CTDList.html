@@ -11,7 +11,7 @@ function sortTable(n) {
   table = document.getElementById("CTD_list");
   switching = true;
   // Set the sorting direction to ascending:
-  dir = "asc"; 
+  dir = "asc";
   /* Make a loop that will continue until
   no switching has been done: */
   while (switching) {
@@ -49,7 +49,7 @@ function sortTable(n) {
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
       switching = true;
       // Each time a switch is done, increase this count by 1:
-      switchcount ++; 
+      switchcount ++;
     } else {
       /* If no switching has been done AND the direction is "asc",
       set the direction to "desc" and run the while loop again. */
@@ -62,7 +62,7 @@ function sortTable(n) {
 }
 </script>
 
-<h1>Cheapest To Deliver US Treasuries Into {{FC}}{{mat}}</h1>
+<h1>Cheapest To Deliver US Treasuries Into {{mat}}</h1>
 	<table id="CTD_list" border=1>
 		<thead><tr>
 			<th>CUSIP</th>

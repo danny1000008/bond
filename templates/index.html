@@ -1,10 +1,30 @@
 <!doctype html>
 <html>
-<head><title>Home</title></head>
+<head><title>Home</title>
+	<script>
+		function getFutConExp() {
+			// once futures contract is chosen, update contract expiration select
+			var expBox = document.getElementById("expiration");
+			const arrFrontContract = ["Mar", "Mar", "Mar", "Jun", "Jun", "Jun",
+				"Sep", "Sep", "Sep", "Dec", "Dec", "Dec"];
+			for (var i = 0; i <= 2; i++) {
+				var myDate = new Date();
+				var addMonths = (myDate.getMonth() + (3 * i)) % 12;
+				console.log("addMonths=" + addMonths);
+				myDate.setMonth(addMonths);
+				var newConExp = [arrFrontContract[myDate.getMonth()],
+					myDate.getFullYear()].join(" ");
+				var newOpt = document.createElement("option");
+				newOpt.text = newConExp;
+				expBox.add(newOpt);
+			}
+		}
+	</script>
+</head>
 <link rel=stylesheet type=text/css href="{{ url_for('static',filename='style.css') }}">
-<body>
+<body onload="getFutConExp()">
 <h1>CME US Treasury Futures</h1>
-<h2>Pick a contract</h2>
+<h2>Pick a contract and expiration</h2>
 <div>
 <form method="POST">
 	<select name="futCon">
@@ -14,6 +34,8 @@
 		<option value="TN">TN - Ultra 10 Year</option>
 		<option value="US">US - Bond</option>
 		<option value="UB">UB - Ultra Bond</option>
+	</select>
+	<select name="expiration" id="expiration">
 	</select>
 	<input type="submit" value="Submit">
 </form>
