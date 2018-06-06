@@ -14,9 +14,10 @@ def index():
 
 @app.route('/', methods = ['POST'])
 def index_post():
+    # Variables should be lowercase (classes are uppercase)
     FC = request.form['futCon'] # futures contract chosen
     FE = request.form['expiration'] # expiration month
-    print('FC, FE=', FC, FE)
+    print('FC, FE=', FC, FE)      # it would be more readable to use an f-string here
     listTsyData = contractBasket.Basket() # class Basket will hold UST securities list
     #listTsyData.getBasket(FC, FE)
     listTsyData.getBasket(FC, FE)
@@ -24,4 +25,5 @@ def index_post():
         FE = FE, mat = listTsyData.getConAbbr(FC, FE))
 
 if __name__ == "__main__":
-    app.run()
+    # Turn debugger on so the app automatically reloads when you edit a file
+    app.run(debug=True)

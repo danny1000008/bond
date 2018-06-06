@@ -4,20 +4,25 @@
 from datetime import date, timedelta
 import urllib3
 import certifi
-import json
+import json  # put standard library imports at the top
 
 class Basket(list):
     def __init__(self, name = '', val = list()):
         self.name = name
         self.value = val
 
+    # There's no need to abbreviate so much if you use an editor that autocompletes
     def getDlvDates(self, exp):
         '''
-        Returns first and last days of the delivery month (March, June, September, or December) for the US Treasury (UST) futures contract
+        Returns first and last days of the delivery month (March, June,
+        September, or December) for the US Treasury (UST) futures contract
+
         '''
         exp = exp.split()
         dictExp = {'Mar': 3, 'Jun': 6, 'Sep': 9, 'Dec': 12}
         day1DelMth = date(int(exp[1]), dictExp[exp[0]], 1)
+
+        # Use an editor that can do multiline comment toggling instead of docstrings
         '''
         if dt.month%3 == 0:     # Mar,Jun, Sep, Dec
             day1DelMth = date(dt.year, dt.month, 1)
@@ -26,6 +31,8 @@ class Basket(list):
         else:                   # Feb, May, Aug, Nov
             day1DelMth = date(dt.year, dt.month + 1, 1)
         '''
+        # If you have to do a lot of datetime manipulation, you should look into
+        # Maya, a datetime library for Python.
         dayLastDelMth = 0
         if day1DelMth.month == 12:
             dayLastDelMth = date(day1DelMth.year, 12, 31)
@@ -36,13 +43,15 @@ class Basket(list):
         print('getDLVDates=', day1DelMth, dayLastDelMth)
         return (day1DelMth, dayLastDelMth)
 
+    # dt is generally not a good variable name for a date variable, since many
+    # people would assume it stores a datetime.
     def getConAbbr(self, conPrefix = '', dt = date.today()):
         '''
         Returns a 4 character string: the UST futures contract abbreviation, which consists of the contract (TU, FV, TY, TN, US, OR UB),
         the expiration month (H = March, M = June, U = September, Z = December), and the last digit of the expiration year
         '''
         dictExp = {'Mar': 'H', 'Jun': 'M', 'Sep': 'U', 'Dec': 'Z'}
-        exp = dt.split()
+        exp = dt.split()       # this can fail
         print('exp=', exp)
         return ''.join([conPrefix, dictExp[exp[0]], str(exp[1][3])])
         #dictFrontContract = {1: "H", 2: "H", 3: "H", 4: "M", 5: "M", 6: "M", 7: "U", 8: "U", 9: "U", 10: "Z", 11: "Z", 12: "Z"}
@@ -52,13 +61,17 @@ class Basket(list):
         '''
         Returns the maturity date of a UST security in yyyy-mm-dd form
         '''
+        # Unnecessary repetition. Also, consider using a regular expression.
         return date(int(ustSec["maturityDate"][0:4]), int(ustSec["maturityDate"][5:7]), int(ustSec["maturityDate"][8:10]))
 
     def getWebPg(self, sec = "Note"):
         '''
         Uses urllib3 to get and return a list of UST securities (either notes or bonds) from treasurydirect.gov's API
         '''
+        # Consider using requests here instead of urllib3.
         urlObj = urllib3.PoolManager(cert_reqs = "CERT_REQUIRED", ca_certs = certifi.where())
+        # Consider using string concatenation to create the URL string.
+        # Consider returning a string instead of bytes.
         return urlObj.request("GET", ''.join(["https://www.treasurydirect.gov/TA_WS/securities/search?format=json&type=", sec]))
 
     def getSpecs(self, FC):
@@ -99,6 +112,9 @@ class Basket(list):
         U.S. Treasury notes with an remaining term to maturity of
         1) at least 25 years as of the first day of the delivery month.
         '''
+        # Consider breaking up the dict literal in multiple lines to increase readability.
+        # Consider using the types in the py-moneyed package to do financial
+        # calculations.
         dictSpecs = {'TU': {'TTM_Min': 1.75, 'maxToDayLast': 2}, 'FV': {'TTM_Min': 4.1667, 'maxToDayLast': 5.25},'TY': {'TTM_Min': 6.5, 'maxToDayLast': 10.0833},
         'TN': {'TTM_Min': 9.4167, 'maxToDayLast': 10.0833}, 'US': {'TTM_Min': 15, 'maxToDayLast': 25.0833}, 'UB': {'TTM_Min': 25, 'maxToDayLast': 30.0833}}
         return dictSpecs[FC]
@@ -113,7 +129,8 @@ class Basket(list):
                'UB': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167, "30-Year": 30}}
         return Terms[FC]
 
-
+    # This method doesn't return a basket. How might you rename it to
+    # better reflect what it actually does?
     def getBasket(self, FC = 'TU', FE = 'Jun 2018'):
         '''
         Goes through the list of UST securities gotten previously from the getWebPg method, and generates a list

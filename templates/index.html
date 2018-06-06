@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
-<head><title>Home</title>
+<head>
+	<title>Home</title>
 	<script>
+		// Will this function do the right thing during the month of July?
 		function getFutConExp() {
 			// once futures contract is chosen, update contract expiration select
-			var expBox = document.getElementById("expiration");
+			let expBox = document.getElementById("expiration");  // ending semicolons are unnecessary if you stick with one statement per line
+			// What can you do to eliminate this unnecessary repetition?
 			const arrFrontContract = ["Mar", "Mar", "Mar", "Jun", "Jun", "Jun",
 				"Sep", "Sep", "Sep", "Dec", "Dec", "Dec"];
 			for (var i = 0; i <= 2; i++) {
@@ -12,6 +15,7 @@
 				var addMonths = (myDate.getMonth() + (3 * i)) % 12;
 				console.log("addMonths=" + addMonths);
 				myDate.setMonth(addMonths);
+				// Consider using a template literal here
 				var newConExp = [arrFrontContract[myDate.getMonth()],
 					myDate.getFullYear()].join(" ");
 				var newOpt = document.createElement("option");
