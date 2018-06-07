@@ -14,10 +14,11 @@ def index():
 
 @app.route('/', methods = ['POST'])
 def index_post():
-    # Variables should be lowercase (classes are uppercase)
+    # Can we rename these variables to follow Python conventions?
     FC = request.form['futCon'] # futures contract chosen
     FE = request.form['expiration'] # expiration month
-    print('FC, FE=', FC, FE)      # it would be more readable to use an f-string here
+    # Can we use an f-string here to improve readability?
+    print('FC, FE=', FC, FE)
     listTsyData = contractBasket.Basket() # class Basket will hold UST securities list
     #listTsyData.getBasket(FC, FE)
     listTsyData.getBasket(FC, FE)

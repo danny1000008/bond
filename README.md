@@ -8,8 +8,8 @@ Bond, US Treasury, and US Treasury futures classes
 
 ## How to run tests
 
-## TODO
+## Questions
 
-- Add .gitignore file
-- Python source file names should be lowercase
+- Can we add a file to the repository to make Git ignore the __pycache__ directory?
+- Can we rename the source files to follow Python conventions?
 - Why are there 2 sortTable.js files?

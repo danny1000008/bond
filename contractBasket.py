@@ -4,7 +4,7 @@
 from datetime import date, timedelta
 import urllib3
 import certifi
-import json  # put standard library imports at the top
+import json  # Can we group all standard library imports at the top?
 
 class Basket(list):
     def __init__(self, name = '', val = list()):
@@ -22,7 +22,8 @@ class Basket(list):
         dictExp = {'Mar': 3, 'Jun': 6, 'Sep': 9, 'Dec': 12}
         day1DelMth = date(int(exp[1]), dictExp[exp[0]], 1)
 
-        # Use an editor that can do multiline comment toggling instead of docstrings
+        # Docstrings are used for documentation, not commenting. What editor do
+        # you use?
         '''
         if dt.month%3 == 0:     # Mar,Jun, Sep, Dec
             day1DelMth = date(dt.year, dt.month, 1)
@@ -31,8 +32,8 @@ class Basket(list):
         else:                   # Feb, May, Aug, Nov
             day1DelMth = date(dt.year, dt.month + 1, 1)
         '''
-        # If you have to do a lot of datetime manipulation, you should look into
-        # Maya, a datetime library for Python.
+        # Have you heard of Maya? It is a library for datetime manipulation.
+        # Is there a way to simplify the following logic?
         dayLastDelMth = 0
         if day1DelMth.month == 12:
             dayLastDelMth = date(day1DelMth.year, 12, 31)
@@ -43,8 +44,7 @@ class Basket(list):
         print('getDLVDates=', day1DelMth, dayLastDelMth)
         return (day1DelMth, dayLastDelMth)
 
-    # dt is generally not a good variable name for a date variable, since many
-    # people would assume it stores a datetime.
+    # Can we think of a better variable name than dt?
     def getConAbbr(self, conPrefix = '', dt = date.today()):
         '''
         Returns a 4 character string: the UST futures contract abbreviation, which consists of the contract (TU, FV, TY, TN, US, OR UB),
@@ -61,14 +61,16 @@ class Basket(list):
         '''
         Returns the maturity date of a UST security in yyyy-mm-dd form
         '''
-        # Unnecessary repetition. Also, consider using a regular expression.
+        # What can we about the unnecessary repetition?
+        # Have you tried using regular expressions yet?
         return date(int(ustSec["maturityDate"][0:4]), int(ustSec["maturityDate"][5:7]), int(ustSec["maturityDate"][8:10]))
 
     def getWebPg(self, sec = "Note"):
         '''
         Uses urllib3 to get and return a list of UST securities (either notes or bonds) from treasurydirect.gov's API
         '''
-        # Consider using requests here instead of urllib3.
+        # Have you used the requests library? It is a higher level library than
+        # urllib3.
         urlObj = urllib3.PoolManager(cert_reqs = "CERT_REQUIRED", ca_certs = certifi.where())
         # Consider using string concatenation to create the URL string.
         # Consider returning a string instead of bytes.
@@ -112,7 +114,7 @@ class Basket(list):
         U.S. Treasury notes with an remaining term to maturity of
         1) at least 25 years as of the first day of the delivery month.
         '''
-        # Consider breaking up the dict literal in multiple lines to increase readability.
+        # Can we break up the dict literal into multiple lines to increase readability?
         # Consider using the types in the py-moneyed package to do financial
         # calculations.
         dictSpecs = {'TU': {'TTM_Min': 1.75, 'maxToDayLast': 2}, 'FV': {'TTM_Min': 4.1667, 'maxToDayLast': 5.25},'TY': {'TTM_Min': 6.5, 'maxToDayLast': 10.0833},
