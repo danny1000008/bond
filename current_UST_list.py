@@ -14,8 +14,10 @@ def index():
 
 @app.route('/', methods = ['POST'])
 def index_post():
+    # Can we rename these variables to follow Python conventions?
     FC = request.form['futCon'] # futures contract chosen
     FE = request.form['expiration'] # expiration month
+    # Can we use an f-string here to improve readability?
     print('FC, FE=', FC, FE)
     listTsyData = contractBasket.Basket() # class Basket will hold UST securities list
     #listTsyData.getBasket(FC, FE)
@@ -24,4 +26,5 @@ def index_post():
         FE = FE, mat = listTsyData.getConAbbr(FC, FE))
 
 if __name__ == "__main__":
-    app.run()
+    # Turn debugger on so the app automatically reloads when you edit a file
+    app.run(debug=True)

@@ -2,6 +2,7 @@
 # written by Danny Wagstaff 9/2017
 from datetime import date, timedelta
 
+# Can we rename this class name to follow Python conventions?
 class bond:
     def __init__(self,matDate,stlDate,cpn=None,cpnFreq=None):
         self.matDate=matDate
@@ -10,7 +11,7 @@ class bond:
         self.cpn=cpn
         self.cpnFreq=cpnFreq
 
-        
+
     def _incRange(self,start,stop,step=1):
         # an iterator function that iterates from start to stop, inclusive
         i=start
@@ -58,7 +59,7 @@ class bond:
             for j in self._incRange(1,numCpns):
                 P_new=P_new + (1+r_old/2)**(1-j-yearFrac)
                 dP_new=dP_new+(1-j-yearFrac) / 2 * (1+r_old/2)**(-j-yearFrac)
-            P_new=P_new*50*self.cpn # same as 100 * cpn / 2    
+            P_new=P_new*50*self.cpn # same as 100 * cpn / 2
             P_new=P_new+100*(1+r_old/2)**(1-numCpns-yearFrac)
             P_new=P_new-self.bai(self.cpn,self.matDate,self.stlDate)
             delta_F=P_new-P_init
@@ -66,7 +67,7 @@ class bond:
             dP_new=dP_new+50*(1-numCpns-yearFrac)*(1+r_old/2)**(-numCpns-yearFrac)
             r_new=r_old-delta_F/dP_new
         return r_new
-    
+
     def bprice(self,yld):
         ''' Calculates the price of a bond from its yield to maturity
         '''
@@ -80,7 +81,7 @@ class bond:
         PV_Par=100/((1+yld/self.cpnFreq)**(self.cpnFreq*DF_Time/365))
         tempPrice = tempPrice + PV_Par-self.bai(self.cpn, self.matDate, self.stlDate)
         return tempPrice
-    
+
     def dv01(self,yld):
         '''
         The dv01 function calculates how much changing the bond yield by 1 basis point (0.01%) changes
@@ -91,8 +92,8 @@ class bond:
         bPxBumpUp=self.bprice(yld+0.0001)
         bPxBumpDown=self.bprice(yld-0.0001)
         return (abs(bPx-bPxBumpUp)+abs(bPx-bPxBumpDown))/2
-    
-    
+
+
 def main():
     stlDate=date(2017,10,4)
     b1=bond(0.01625,2,date(2019,6,30),stlDate)
@@ -144,6 +145,6 @@ def main():
     print('b7 yield',b7.byld(100))
     print('b8 CF',b8.getCF(date(2017,12,1), 2))
     print('b8 yield',b8.byld(100))
-    
+
 if __name__=="__main__":
     main()
