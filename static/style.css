@@ -25,3 +25,9 @@ p   {
     margin-left: 2%;
     margin-right: 2%;
 }
+#CTD_list tr:nth-child(even) {
+  background-color: #ddd;
+}
+#CTD_list tr:nth-child(odd) {
+  background-color: #fff;
+}

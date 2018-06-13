@@ -20,7 +20,7 @@ def index_post():
     stl = listTsyData.get_latest_stl_date()
     listTsyData.define_basket(fc, fe)
     return render_template('CTDList.html', listData=listTsyData.value, fc = fc,
-        fe = fe, mat = listTsyData.getConAbbr(fc, fe), stl = stl)
+        fe = fe, mat = listTsyData.get_con_abbr(fc, fe), stl = stl)
 
 if __name__ == "__main__":
     # Turn debugger on so the app automatically reloads when you edit a file

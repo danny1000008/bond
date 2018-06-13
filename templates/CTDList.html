@@ -12,10 +12,18 @@
 			<th><a href="javascript: void(0);" onclick="sortTable(1);">Coupon</a></th>
 			<th><a href="javascript: void(0);" onclick="sortTable(2);">Maturity</a></th>
 			<th>Years to Maturity</th>
+			<th>Closing Price ({{ stl }})</th>
+			<th style="width: 60px">Yield</th>
 		</tr></thead>
 		<tbody>
 		{% for tsy in listData %}
-			<tr><td align='center'>{{tsy.cusip}}</td><td>{{tsy.intRate}}</td><td>{{tsy.matDate}}</td><td align='center'>{{tsy.TTM}}</td></tr>
+			<tr><td align='center'>{{tsy.cusip}}</td>
+				<td>{{tsy.int_rate}}</td>
+				<td>{{tsy.mat_date}}</td>
+				<td align='center'>{{tsy.ttm}}</td>
+				<td align='center'>{{tsy.price}}</td>
+				<td align='center'>{{tsy.yield}}</td>
+			</tr>
 		{% endfor %}
 	</tbody></table>
 	<br/>

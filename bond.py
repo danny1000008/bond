@@ -93,6 +93,98 @@ class bond:
         bPxBumpDown=self.bprice(yld-0.0001)
         return (abs(bPx-bPxBumpUp)+abs(bPx-bPxBumpDown))/2
 
+    def nextCpn(self, stlDt):
+        '''
+        Returns date of next coupon payment after stlDt
+        '''
+        newDt = date(self.matDate.year, self.matDate.month, self.matDate.day)
+        cpnNPlus1 = newDt
+        while newDt > stlDt:
+            newDt -= timedelta(days = 185)
+            newDt = date(newDt.year, newDt.month, self.getCpnDayOfMo(newDt.month))
+        newDt += timedelta(days = 180)
+        newDt = date(newDt.year, newDt.month, self.getCpnDayOfMo(newDt.month))
+        return newDt
+
+    def prevCpn(self, stlDt):
+        '''
+        Returns date of previous coupon payment before stlDt
+        '''
+
+        cpnNext = self.nextCpn(stlDt)
+        cpnPrev = date(cpnNext.year - 1, cpnNext.month, cpnNext.day)
+        return self.nextCpn(cpnPrev)
+
+    def numCoupons(self, basis = 'A/A'):
+        '''
+        Returns number of coupons remaining after self.stlDate
+        '''
+        count = 0
+        cpnNext = self.nextCpn(self.stlDate)
+        while cpnNext < self.matDate:
+            count += 1
+            cpnNext = self.nextCpn(cpnNext + timedelta(1))
+        #print('count=', count + 1)
+        return count + 1
+
+    def getCpnDayOfMo(self, mo):
+        '''
+        Returns the day of the month that a coupon payment will be made
+        (typically the 15th or the last day of the month)
+        '''
+        daysInMo = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31,
+            9: 30, 10: 31, 11: 30, 12: 31}
+        guess1 = daysInMo[mo]
+        if self.matDate.day < 28:
+            guess1 = self.matDate.day
+        return guess1
+
+    def bai(self):
+        '''
+        Returns the accrued interest from the last coupon payment till self.stlDate
+        '''
+        dtPrevCpn = self.prevCpn(self.stlDate)
+        daysInPer = (self.nextCpn(self.stlDate) - dtPrevCpn).days
+        daysInt = (self.stlDate - dtPrevCpn).days
+        bai = self.cpn / 2 * (daysInt / daysInPer) * 100
+        return bai
+
+    def byld(self, price):
+        '''
+        Returns the yield to maturity of the bond, given a price
+        '''
+        basis = 'A/A' # actual/actual day count. In the future I will add other day count options
+        numCpns = self.numCoupons(basis)
+        prevCpnDate = self.prevCpn(self.stlDate)
+        nextCpnDate = self.nextCpn(self.stlDate)
+        daysBetwCpns = (nextCpnDate - prevCpnDate).days
+        daysStlToCpn = (nextCpnDate - self.stlDate).days
+        yearFrac = daysStlToCpn / daysBetwCpns
+        # initial guess for yield
+        r_new = self.cpn
+        P_new = price
+        P_init = price
+        # do 10 iterations of Newton's Method to approximate yield to maturity
+        bai = self.bai()
+        for i in range(10):
+            r_old = r_new
+            P_old = P_new
+            P_new = 0
+            dP_new = 0
+            for j in self._incRange(1, numCpns):
+                P_new = P_new + (1 + r_old / 2.0) ** (1 - j - yearFrac)
+                dP_new = dP_new + (1 - j - yearFrac) / 2.0 * (1 + r_old / 2.0) ** (-j - yearFrac)
+            P_new = P_new * 50 * self.cpn # same as 100 * cpn / 2
+            P_new = P_new + 100 * (1 + r_old / 2.0) ** (1 - numCpns - yearFrac)
+            P_new = P_new - bai
+
+            delta_F = P_new - P_init
+
+            dP_new = dP_new * 50 * self.cpn # same as 100 * cpn / 2
+            dP_new = dP_new + 50 * (1 - numCpns - yearFrac) * (1 + r_old / 2.0) ** (-numCpns - yearFrac)
+            r_new = r_old - delta_F / dP_new
+        return round(r_new * 100, 3)
+
 
 def main():
     stlDate=date(2017,10,4)
