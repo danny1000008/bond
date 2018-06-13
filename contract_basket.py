@@ -2,84 +2,74 @@
 # written by Danny Wagstaff 9/2017
 
 from datetime import date, timedelta
+import json  # Can we group all standard library imports at the top?
+import os.path
 import urllib3
 import certifi
-import json  # Can we group all standard library imports at the top?
 import xmltodict
-import os.path
 import bond
 
 class Basket(list):
     def __init__(self, name = '', val = list()):
         self.name = name
         self.value = val
-
+        self.stl_date = self.get_latest_stl_date()
+        self.fc = '' # futures contract
+        self.fe = '' #futures expiration (e.g., Jun 2018)
     # There's no need to abbreviate so much if you use an editor that autocompletes
-    def getDlvDates(self, exp):
+
+    def get_dlv_dates(self, exp):
         '''
         Returns first and last days of the delivery month (March, June,
         September, or December) for the US Treasury (UST) futures contract
-
         '''
         exp = exp.split()
-        dictExp = {'Mar': 3, 'Jun': 6, 'Sep': 9, 'Dec': 12}
-        day1DelMth = date(int(exp[1]), dictExp[exp[0]], 1)
+        dict_exp = {'Mar': 3, 'Jun': 6, 'Sep': 9, 'Dec': 12}
+        day1_del_month = date(int(exp[1]), dict_exp[exp[0]], 1)
+        day_last_del_month = 0
+        if day1_del_month.month == 12:
+            day_last_del_month = date(day1_del_month.year, 12, 31)
+        else:
+            day_last_del_month = date(day1_del_month.year, day1_del_month.month + 1,
+            day1_del_month.day) - timedelta(days = 1)
+        return (day1_del_month, day_last_del_month)
 
         # Docstrings are used for documentation, not commenting. What editor do
         # you use?
-        '''
-        if dt.month%3 == 0:     # Mar,Jun, Sep, Dec
-            day1DelMth = date(dt.year, dt.month, 1)
-        elif dt.month%3 == 1:   # Jan, Apr, Jul, Oct
-            day1DelMth = date(dt.year, dt.month + 2, 1)
-        else:                   # Feb, May, Aug, Nov
-            day1DelMth = date(dt.year, dt.month + 1, 1)
-        '''
+
         # Have you heard of Maya? It is a library for datetime manipulation.
         # Is there a way to simplify the following logic?
-        dayLastDelMth = 0
-        if day1DelMth.month == 12:
-            dayLastDelMth = date(day1DelMth.year, 12, 31)
-        else:
-            dayLastDelMth = date(day1DelMth.year, day1DelMth.month + 1,
-            day1DelMth.day) - timedelta(days = 1)
-        #dayLastDelMth = date(day1DelMth.year, (day1DelMth.month + 1) % 12, 1) - timedelta(days = 1)
-        print('getDLVDates=', day1DelMth, dayLastDelMth)
-        return (day1DelMth, dayLastDelMth)
 
     # Can we think of a better variable name than dt?
-    def getConAbbr(self, conPrefix = '', dt = date.today()):
+    def get_con_abbr(self, con_prefix = '', today = date.today()):
         '''
         Returns a 4 character string: the UST futures contract abbreviation, which consists of the contract (TU, FV, TY, TN, US, OR UB),
         the expiration month (H = March, M = June, U = September, Z = December), and the last digit of the expiration year
         '''
-        dictExp = {'Mar': 'H', 'Jun': 'M', 'Sep': 'U', 'Dec': 'Z'}
-        exp = dt.split()       # this can fail
-        print('exp=', exp)
-        return ''.join([conPrefix, dictExp[exp[0]], str(exp[1][3])])
-        #dictFrontContract = {1: "H", 2: "H", 3: "H", 4: "M", 5: "M", 6: "M", 7: "U", 8: "U", 9: "U", 10: "Z", 11: "Z", 12: "Z"}
-        #return ''.join([conPrefix, dictFrontContract[dt.month], str(dt.year)[3]])
+        dict_exp = {'Mar': 'H', 'Jun': 'M', 'Sep': 'U', 'Dec': 'Z'}
+        exp = today.split()
+        return ''.join([con_prefix, dict_exp[exp[0]], str(exp[1][3])])
 
-    def getMatDate(self, ustSec):
+    def get_mat_date(self, ust_sec):
         '''
         Returns the maturity date of a UST security in yyyy-mm-dd form
         '''
         # What can we about the unnecessary repetition?
         # Have you tried using regular expressions yet?
-        return date(int(ustSec["maturityDate"][0:4]), int(ustSec["maturityDate"][5:7]), int(ustSec["maturityDate"][8:10]))
+        return date(int(ust_sec["maturityDate"][0:4]), int(ust_sec["maturityDate"][5:7]), int(ust_sec["maturityDate"][8:10]))
 
-    def getWebPg(self, sec = "Note"):
+    def get_web_pg(self, sec = "Note"):
         '''
         Uses urllib3 to get and return a list of UST securities (either notes or bonds) from treasurydirect.gov's API
         '''
         # Have you used the requests library? It is a higher level library than
         # urllib3.
-        urlObj = urllib3.PoolManager(cert_reqs = "CERT_REQUIRED", ca_certs = certifi.where())
         # Consider using string concatenation to create the URL string.
         # Consider returning a string instead of bytes.
-        return urlObj.request("GET", ''.join(["https://www.treasurydirect.gov/TA_WS/securities/search?format=json&type=", sec]))
+        url_obj = urllib3.PoolManager(cert_reqs = "CERT_REQUIRED", ca_certs = certifi.where())
+        return url_obj.request("GET", ''.join(["https://www.treasurydirect.gov/TA_WS/securities/search?format=json&type=", sec]))
 
-    def getSpecs(self, FC):
+    def get_specs(self, fc):
         '''
         Returns 1) the minimum time between the first day of the delivery month and the UST security's maturity date, and
                 2) the maximum time between the last day of the delivery month and the UST security's maturity date
@@ -120,69 +110,162 @@ class Basket(list):
         # Can we break up the dict literal into multiple lines to increase readability?
         # Consider using the types in the py-moneyed package to do financial
         # calculations.
-        dictSpecs = {'TU': {'TTM_Min': 1.75, 'maxToDayLast': 2}, 'FV': {'TTM_Min': 4.1667, 'maxToDayLast': 5.25},'TY': {'TTM_Min': 6.5, 'maxToDayLast': 10.0833},
-        'TN': {'TTM_Min': 9.4167, 'maxToDayLast': 10.0833}, 'US': {'TTM_Min': 15, 'maxToDayLast': 25.0833}, 'UB': {'TTM_Min': 25, 'maxToDayLast': 30.0833}}
-        return dictSpecs[FC]
+        dict_specs = {'TU': {'ttm_min': {'years': 1, 'months': 9}, 'max_to_day_last': {'years': 2, 'months': 0}},
+            'FV': {'ttm_min': {'years': 4, 'months': 2}, 'max_to_day_last': {'years': 5, 'months': 3}},
+            'TY': {'ttm_min': {'years': 6, 'months': 6}, 'max_to_day_last': {'years': 10, 'months': 0},
+            'ttm_max': {'years': 10, 'months': 0}},
+            'TN':{'ttm_min': {'years': 9, 'months': 5}, 'max_to_day_last': {'years': 10, 'months': 0},
+            'ttm_max': {'years': 10, 'months': 0}},
+            'US': {'ttm_min': {'years': 15, 'months': 0}, 'max_to_day_last': {'years': 25, 'months': 0},
+            'ttm_max': {'years': 25, 'months': 0}},
+            'UB': {'ttm_min': {'years': 25, 'months': 0}, 'max_to_day_last': {'years': 30, 'months': 0},
+            'ttm_max': {'years': 30, 'months': 0}}}
+        #dict_specs = {'TU': {'ttm_min': 1.75, 'max_to_day_last': 2},
+        #'FV': {'ttm_min': 4.1667, 'max_to_day_last': 5.25},
+        #'TY': {'ttm_min': 6.5, 'max_to_day_last': 10.0833},
+        #'TN': {'ttm_min': 9.4167, 'max_to_day_last': 10.0833},
+        #'US': {'ttm_min': 15, 'max_to_day_last': 25.0833},
+        #'UB': {'ttm_min': 25, 'max_to_day_last': 30.0833}}
+        return dict_specs[fc]
 
 
-    def getTerms(self, FC):
+    def get_terms(self, fc):
         '''
-        Returns a dictionary of original times to maturity of UST securities eligible to be delivered into the UST futures contract (given by FC)
+        Returns a dictionary of original times to maturity of UST securities eligible to be delivered into the UST futures contract (given by fc)
         '''
-        Terms={'TU': {"2-Year": 2, "3-Year": 3, "5-Year": 5}, 'FV': {"5-Year": 5}, 'TY': {"7-Year": 7, "9-Year 10-Month": 9.8333, "9-Year 11-Month": 9.9167, "10-Year": 10}, \
-               'TN': {"9-Year 10-Month": 9.8333, "9-Year 11-Month": 9.9167, "10-Year": 10}, 'US': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167,"30-Year": 30}, \
-               'UB': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167, "30-Year": 30}}
-        return Terms[FC]
+        terms = {'TU': {"2-Year": 2, "3-Year": 3, "5-Year": 5},
+            'FV': {"5-Year": 5},
+            'TY': {"7-Year": 7, "9-Year 10-Month": 9.8333, "9-Year 11-Month": 9.9167, "10-Year": 10},
+            'TN': {"9-Year 10-Month": 9.8333, "9-Year 11-Month": 9.9167, "10-Year": 10}, 'US': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167,"30-Year": 30},
+            'UB': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167, "30-Year": 30}}
+        return terms[fc]
+
+    def get_min_max_mats(self, fc = 'TU', day_first = date(2018, 6, 1), day_last = date(2018, 6, 30)):
+        specs = self.get_specs(fc)
+        yrs_to_add, months = divmod(day_first.month + specs['ttm_min']['months'], 12)
+        min_mat = date.today()
+        if months == 0:
+            months = 12
+            min_mat = date(day_first.year + specs['ttm_min']['years'],
+            months, day_first.day)
+        else:
+            min_mat = date(day_first.year + specs['ttm_min']['years'] + yrs_to_add,
+                months, day_first.day)
+        max_mat = date.today()
+        dictDaysInMonths = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31,
+            8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+        try:
+            yrs_to_add, months = divmod(day_first.month + specs['ttm_max']['months'], 12)
+            if months == 0:
+                months = 12
+            max_mat = date(day_first.year + specs['ttm_max']['years'] + yrs_to_add,
+                months, day_first.day)
+        except:
+            yrs_to_add, months = divmod(day_last.month + specs['max_to_day_last']['months'], 12)
+            if months == 0:
+                months = 12
+                max_mat = date(day_last.year + specs['max_to_day_last']['years'],
+                    months, dictDaysInMonths[months])
+            else:
+                max_mat = date(day_last.year + specs['max_to_day_last']['years'] + yrs_to_add,
+                    months, dictDaysInMonths[months])
+        return min_mat, max_mat
+
 
     # This method doesn't return a basket. How might you rename it to
     # better reflect what it actually does?
-    def getBasket(self, FC = 'TU', FE = 'Jun 2018'):
+    def define_basket(self, fc = 'TU', fe = 'Jun 2018'):
         '''
-        Goes through the list of UST securities gotten previously from the getWebPg method, and generates a list
-        of securities eligible to be delivered into the UST futures contract (passed to the method as FC), which is stored in self.value
+        Goes through the list of UST securities gotten previously from the get_web_pg method, and generates a list
+        of securities eligible to be delivered into the UST futures contract (passed to the method as fc), which is stored in self.value
         '''
         self.value = [] # start with empty list
-        (day1DelMth, dayLastDelMth) = self.getDlvDates(FE)
-        if FC in ['US', 'UB']: # US=bond contract (>=15 yrs to maturity); UB=ultra bond (>=25 yrs to maturity)
-            tsyDrct = self.getWebPg("Bond") # US Treasury securities deliverable into US or UB contracts
+        (day1_del_month, day_last_del_month) = self.get_dlv_dates(fe)
+        if fc in ['US', 'UB']: # US=bond contract (>=15 yrs to maturity); UB=ultra bond (>=25 yrs to maturity)
+            tsy_drct = self.get_web_pg("Bond") # US Treasury securities deliverable into US or UB contracts
         else:
-            tsyDrct = self.getWebPg("Note") # US Treasury securities deliverable into TU (2 yr), FV (5 yr), TY (original 10 yr), TN (ultra 10 yr) contracts
-        dictUSTSecs = json.loads(tsyDrct.data.decode("utf-8"))
-        dictTerms = self.getTerms(FC)
-        dictSpecs = self.getSpecs(FC)
-        secCount = 0
-        listCUSIP = []
-        for TSec in dictUSTSecs:
-            edgeCase = ''
+            tsy_drct = self.get_web_pg("Note") # US Treasury securities deliverable into TU (2 yr), FV (5 yr), TY (original 10 yr), TN (ultra 10 yr) contracts
+        dict_ust_secs = json.loads(tsy_drct.data.decode("utf-8"))
+        dict_terms = self.get_terms(fc)
+        dict_specs = self.get_specs(fc)
+        self.min_mat_dt, self.max_mat_dt = self.get_min_max_mats(fc, day1_del_month, day_last_del_month)
+        list_cusip = []
+        for t_sec in dict_ust_secs:
+            edge_case = ''
             # check to see if bond's original term satisfies contract specs (mostly applies to TU contract)
-            if TSec["term"] in dictTerms:
-                USTMatDate = self.getMatDate(TSec)
-                if USTMatDate.year == 2023:
-                    print("term, matDate=", TSec['term'], USTMatDate)
-                # check to see if conditions 1) and 2) are satisfied
-                # dateutil is not available through A2 Hosting; must do something else to calculate dateDiff1 and dateDiff2
-                #dateDiff1=relativedelta(USTMatDate,day1DelMth).years+relativedelta(USTMatDate,day1DelMth).months/12+relativedelta(USTMatDate,day1DelMth).days/365.25
-                #dateDiff2=relativedelta(USTMatDate,dayLastDelMth).years+relativedelta(USTMatDate,dayLastDelMth).months/12+relativedelta(USTMatDate,dayLastDelMth).days/365.25
-                dateDiff1 = (USTMatDate - day1DelMth).days / 365.25 # just an approximation!
-                dateDiff2 = (USTMatDate - dayLastDelMth).days / 365.25 # just an approximation!
-                # this may include/exclude a security on the "edge" of the basket
-                if dateDiff1 >= dictSpecs["TTM_Min"] and dateDiff2 <= dictSpecs['maxToDayLast']:
-                    # temporary marking of possible edge cases
-                    if abs(dateDiff1 - dictSpecs["TTM_Min"]) <= 0.005:
-                        edgeCase = '**'
-                    # check to see if condition TU 3) is satisfied
-                    if dateDiff2 <= max(dictTerms.values()):
-                        for tenor in dictTerms:
-                            if abs(dateDiff2 - dictTerms[tenor]) <= 0.005:
-                                edgeCase = '**'
-                        # must check for When Issued (WI) notes and reopenings, as these are not deliverable securities
-                        # Also make sure we don't already have the security in our list
-                        if len(TSec["interestRate"]) > 0 and not (TSec["cusip"] in listCUSIP):
-                            secCount = secCount + 1
-                            TTM = (USTMatDate - date.today()).days / 365.25
-                            TTM = str('%.2f' % TTM)
-                            TSec['lowYield'] = '%.2f' % float(TSec['lowYield'])
-                            self.value.append({'matDate': ''.join([TSec["maturityDate"][0:10], edgeCase]), 'intRate': float(TSec["interestRate"]), \
-                                             'cpnsPerYr': 2, 'TTM': TTM, 'cusip': TSec["cusip"], 'issueDate': TSec['issueDate'][0:10], \
-                                             'lowYield': TSec['lowYield']})
-                            listCUSIP.append(TSec["cusip"])
+            if t_sec["term"] in dict_terms:
+                ust_mat_date = self.get_mat_date(t_sec)
+                if ust_mat_date >= self.min_mat_dt and ust_mat_date <= self.max_mat_dt:
+                    # must check for When Issued (WI) notes and reopenings, as these are not deliverable securities
+                    # Also make sure we don't already have the security in our list
+                    if len(t_sec["interestRate"]) > 0 and not (t_sec["cusip"] in list_cusip):
+                        ttm = (ust_mat_date - date.today()).days / 365.25
+                        ttm = str('%.2f' % ttm)
+                        price = self.get_bond_prices(t_sec['cusip'])
+                        new_bond = bond.bond(ust_mat_date, self.stl_date, float(t_sec['interestRate']) / 100, 2)
+                        self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10], edge_case]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
+                             'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
+                             'yield': new_bond.byld(price), 'price': price})
+                        list_cusip.append(t_sec["cusip"])
+
+    def get_bond_prices(self, cusip):
+        '''
+        Opens file with closing prices from date d, then returns closing price
+        of US Treasury security identified by cusip. Closing price files are
+        in the static\closePx folder
+        '''
+        f_name = self.get_stl_file_path(self.stl_date)
+        #print('priceFile=', f_name)
+        #try:
+        f_pipe = open(f_name, 'r')
+        #except:
+        #    print('Could not open pipe to ', f_name)
+        #    return f_name
+
+        prices = xmltodict.parse(f_pipe.read())
+        result = 0
+        for sec in prices['bpd:FedInvestPriceData']['Prices']['Security']:
+            if sec['Cusip'] == cusip:
+                if float(sec['EODPrice']) > 0:
+                    result = float(sec['EODPrice'])
+                else:
+                    result = (float(sec['BuyPrice']) + float(sec['SellPrice'])) / 2
+        #print('result=', result)
+        return round(result, 3)
+
+    def get_stl_file_path(self, dt):
+        cwd = os.getcwd()
+        os_platform = os.name
+        if os_platform == 'nt': # case Windows (my dev env)
+            return ''.join([cwd, '\static\closePx\securityprice.', str(dt), '.xml'])
+        else: # case Linux (my production env)
+            if 'public' in cwd:
+                return ''.join([cwd, '/static/closePx/securityprice.', str(dt), '.xml'])
+            else: return ''.join([cwd, '/public/static/closePx/securityprice.', str(dt), '.xml'])
+
+    def get_last_close_date(self, dt = date.today()):
+        last_bus_day = dt
+        if dt.weekday() >= 1 and dt.weekday() <= 5: # Tuesday - Saturday
+            last_bus_day = dt - timedelta(days = 1)
+        elif dt.weekday() == 0: # Monday
+            last_bus_day = dt - timedelta(days = 3)
+        else:
+            last_bus_day = dt - timedelta(days = 2) # Sunday
+        return last_bus_day
+
+    def get_latest_stl_date(self, dt = date.today()):
+        '''
+        Returns the date of the most recent settlement prices file in the
+        static/closePx folder.
+        '''
+        f_name = self.get_stl_file_path(dt)
+        while not os.path.isfile(f_name):
+            # currently we don't have settlement prices before June 2018
+            if dt < date(2018, 6, 1):
+                break
+            dt = self.get_last_close_date(dt)
+            f_name = self.get_stl_file_path(dt)
+        return dt
+
+    def set_stl_date(self, dt):
+        self.stl_date = dt
