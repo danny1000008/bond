@@ -6,16 +6,16 @@ Bond, US Treasury, and US Treasury futures classes
     pip install -r requirements.txt
 
 ## How to run the program
-    python current_UST_list.py
+    python main.py
 
 ## How to run tests
 
 ## Questions
-
 - Can we add a file to the repository to make Git ignore the __pycache__ directory?
-yes
+done
 
 - Can we rename the source files to follow Python conventions?
-yes
+done
 
 - Why are there 2 sortTable.js files?
+fixed
