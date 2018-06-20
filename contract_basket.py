@@ -16,6 +16,7 @@ class Basket(list):
         self.stl_date = self.get_latest_stl_date()
         self.fc = '' # futures contract
         self.fe = '' #futures expiration (e.g., Jun 2018)
+        self.list_CUSIPs = []
     # There's no need to abbreviate so much if you use an editor that autocompletes
 
     def get_dlv_dates(self, exp):
@@ -140,10 +141,10 @@ class Basket(list):
             'UB': {"29-Year 10-Month": 29.8333, "29-Year 11-Month": 29.9167, "30-Year": 30}}
         return terms[fc]
 
-    def get_min_max_mats(self, fc = 'TU', day_first = date(2018, 6, 1), day_last = date(2018, 6, 30)):
+    def get_min_mat(self, fc, day_first, day_last):
+        min_mat = date.today()
         specs = self.get_specs(fc)
         yrs_to_add, months = divmod(day_first.month + specs['ttm_min']['months'], 12)
-        min_mat = date.today()
         if months == 0:
             months = 12
             min_mat = date(day_first.year + specs['ttm_min']['years'],
@@ -151,7 +152,12 @@ class Basket(list):
         else:
             min_mat = date(day_first.year + specs['ttm_min']['years'] + yrs_to_add,
                 months, day_first.day)
+        return min_mat
+
+    def get_max_mat(self, fc, day_first, day_last):
         max_mat = date.today()
+        specs = self.get_specs(fc)
+        yrs_to_add, months = divmod(day_first.month + specs['ttm_min']['months'], 12)
         dictDaysInMonths = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31,
             8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
         try:
@@ -169,7 +175,29 @@ class Basket(list):
             else:
                 max_mat = date(day_last.year + specs['max_to_day_last']['years'] + yrs_to_add,
                     months, dictDaysInMonths[months])
+        return max_mat
+
+    def get_min_max_mats(self, fc = 'TU', day_first = date(2018, 6, 1), day_last = date(2018, 6, 30)):
+        min_mat = self.get_min_mat(fc, day_first, day_last)
+        max_mat = self.get_max_mat(fc, day_first, day_last)
         return min_mat, max_mat
+
+    def check_if_when_issued_or_dup(self, t_sec):
+        #if len(t_sec["interestRate"]) > 0 and not (t_sec["cusip"] in list_cusip):
+        if len(t_sec["interestRate"]) > 0 and not (t_sec["cusip"] in self.list_CUSIPs):
+            ust_mat_date = self.get_mat_date(t_sec)
+            ttm = (ust_mat_date - date.today()).days / 365.25
+            ttm = str('%.2f' % ttm)
+            price = self.get_bond_prices(t_sec['cusip'])
+            new_bond = bond.bond(ust_mat_date, self.stl_date, float(t_sec['interestRate']) / 100, 2)
+            #self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10], edge_case]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
+            #     'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
+            #     'yield': new_bond.byld(price), 'price': price})
+            self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10]]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
+                 'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
+                 'yield': new_bond.byld(price), 'price': price})
+            #list_cusip.append(t_sec["cusip"])
+            self.list_CUSIPs.append(t_sec["cusip"])
 
 
     # This method doesn't return a basket. How might you rename it to
@@ -198,15 +226,9 @@ class Basket(list):
                 if ust_mat_date >= self.min_mat_dt and ust_mat_date <= self.max_mat_dt:
                     # must check for When Issued (WI) notes and reopenings, as these are not deliverable securities
                     # Also make sure we don't already have the security in our list
-                    if len(t_sec["interestRate"]) > 0 and not (t_sec["cusip"] in list_cusip):
-                        ttm = (ust_mat_date - date.today()).days / 365.25
-                        ttm = str('%.2f' % ttm)
-                        price = self.get_bond_prices(t_sec['cusip'])
-                        new_bond = bond.bond(ust_mat_date, self.stl_date, float(t_sec['interestRate']) / 100, 2)
-                        self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10], edge_case]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
-                             'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
-                             'yield': new_bond.byld(price), 'price': price})
-                        list_cusip.append(t_sec["cusip"])
+                    self.check_if_when_issued_or_dup(t_sec)
+                    list_cusip = self.list_CUSIPs
+                    
 
     def get_bond_prices(self, cusip):
         '''
@@ -215,12 +237,10 @@ class Basket(list):
         in the static\closePx folder
         '''
         f_name = self.get_stl_file_path(self.stl_date)
-        #print('priceFile=', f_name)
         #try:
         f_pipe = open(f_name, 'r')
         #except:
         #    print('Could not open pipe to ', f_name)
-        #    return f_name
 
         prices = xmltodict.parse(f_pipe.read())
         result = 0
@@ -230,7 +250,6 @@ class Basket(list):
                     result = float(sec['EODPrice'])
                 else:
                     result = (float(sec['BuyPrice']) + float(sec['SellPrice'])) / 2
-        #print('result=', result)
         return round(result, 3)
 
     def get_stl_file_path(self, dt):
