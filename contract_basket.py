@@ -190,13 +190,9 @@ class Basket(list):
             ttm = str('%.2f' % ttm)
             price = self.get_bond_prices(t_sec['cusip'])
             new_bond = bond.bond(ust_mat_date, self.stl_date, float(t_sec['interestRate']) / 100, 2)
-            #self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10], edge_case]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
-            #     'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
-            #     'yield': new_bond.byld(price), 'price': price})
             self.value.append({'mat_date': ''.join([t_sec["maturityDate"][0:10]]), 'int_rate': round(float(t_sec["interestRate"]), 3), \
                  'cpns_per_yr': 2, 'ttm': ttm, 'cusip': t_sec["cusip"], 'issue_date': t_sec['issueDate'][0:10], \
                  'yield': new_bond.byld(price), 'price': price})
-            #list_cusip.append(t_sec["cusip"])
             self.list_CUSIPs.append(t_sec["cusip"])
 
 
@@ -228,7 +224,7 @@ class Basket(list):
                     # Also make sure we don't already have the security in our list
                     self.check_if_when_issued_or_dup(t_sec)
                     list_cusip = self.list_CUSIPs
-                    
+
 
     def get_bond_prices(self, cusip):
         '''
