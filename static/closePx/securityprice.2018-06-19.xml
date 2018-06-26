@@ -1,0 +1,4719 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+
+
+
+
+<bpd:FedInvestPriceData xmlns:bpd="http://www.treasurydirect.gov/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.treasurydirect.gov/ http://www.treasurydirect.gov/xsd/FedInvestPrice_v2_0_0.xsd">
+
+<Prices>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796MF3</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>06/21/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.989778</SellPrice>
+		<EODPrice>99.994833</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PM5</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>06/28/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.954875</BuyPrice>
+		<SellPrice>99.954750</SellPrice>
+		<EODPrice>99.960000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PN3</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>07/05/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.920667</BuyPrice>
+		<SellPrice>99.920444</SellPrice>
+		<EODPrice>99.925833</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PQ6</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>07/12/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.885319</BuyPrice>
+		<SellPrice>99.885000</SellPrice>
+		<EODPrice>99.890000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796MK2</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>07/19/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.849583</BuyPrice>
+		<SellPrice>99.848333</SellPrice>
+		<EODPrice>99.853389</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PR4</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>07/26/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.815514</BuyPrice>
+		<SellPrice>99.815000</SellPrice>
+		<EODPrice>99.819000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PS2</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>08/02/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.774500</BuyPrice>
+		<SellPrice>99.773889</SellPrice>
+		<EODPrice>99.780222</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PU7</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>08/09/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.737917</BuyPrice>
+		<SellPrice>99.736500</SellPrice>
+		<EODPrice>99.740278</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796NQ8</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>08/16/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.697917</BuyPrice>
+		<SellPrice>99.697111</SellPrice>
+		<EODPrice>99.703917</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PV5</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>08/23/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.661458</BuyPrice>
+		<SellPrice>99.660556</SellPrice>
+		<EODPrice>99.664000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PW3</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>08/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.625000</BuyPrice>
+		<SellPrice>99.624000</SellPrice>
+		<EODPrice>99.629222</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PY9</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>09/06/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.586347</BuyPrice>
+		<SellPrice>99.585250</SellPrice>
+		<EODPrice>99.588333</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796NV7</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>09/13/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.547306</BuyPrice>
+		<SellPrice>99.546111</SellPrice>
+		<EODPrice>99.551389</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PZ6</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>09/20/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.507875</BuyPrice>
+		<SellPrice>99.506583</SellPrice>
+		<EODPrice>99.511889</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QA0</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>09/27/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.470833</BuyPrice>
+		<SellPrice>99.469444</SellPrice>
+		<EODPrice>99.480250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QB8</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>10/04/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.429333</BuyPrice>
+		<SellPrice>99.429333</SellPrice>
+		<EODPrice>99.431722</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796NZ8</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>10/11/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.384083</BuyPrice>
+		<SellPrice>99.382500</SellPrice>
+		<EODPrice>99.391056</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QD4</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>10/18/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.342903</BuyPrice>
+		<SellPrice>99.341222</SellPrice>
+		<EODPrice>99.346667</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QE2</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>10/25/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.297778</BuyPrice>
+		<SellPrice>99.296000</SellPrice>
+		<EODPrice>99.301500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QF9</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>11/01/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.251875</BuyPrice>
+		<SellPrice>99.250000</SellPrice>
+		<EODPrice>99.259278</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PD5</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>11/08/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.209139</BuyPrice>
+		<SellPrice>99.207167</SellPrice>
+		<EODPrice>99.208833</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QJ1</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>11/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.170153</BuyPrice>
+		<SellPrice>99.168083</SellPrice>
+		<EODPrice>99.165444</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QK8</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>11/23/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.112514</BuyPrice>
+		<SellPrice>99.110333</SellPrice>
+		<EODPrice>99.116000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QL6</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>11/29/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.078597</BuyPrice>
+		<SellPrice>99.076333</SellPrice>
+		<EODPrice>99.082000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PE3</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>12/06/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.034306</BuyPrice>
+		<SellPrice>99.031944</SellPrice>
+		<EODPrice>99.037639</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QN2</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>12/13/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.989625</BuyPrice>
+		<SellPrice>98.987167</SellPrice>
+		<EODPrice>98.992889</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PK9</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>01/03/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.886250</BuyPrice>
+		<SellPrice>98.883500</SellPrice>
+		<EODPrice>98.894611</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PP8</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>01/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.709917</BuyPrice>
+		<SellPrice>98.700500</SellPrice>
+		<EODPrice>98.700000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PT0</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>02/28/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.514806</BuyPrice>
+		<SellPrice>98.511278</SellPrice>
+		<EODPrice>98.510111</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796PX1</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>03/28/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.304083</BuyPrice>
+		<SellPrice>98.292333</SellPrice>
+		<EODPrice>98.298389</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QC6</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>04/25/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.084028</BuyPrice>
+		<SellPrice>98.079722</SellPrice>
+		<EODPrice>98.094500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912796QH5</Cusip>
+		<SecurityType>MARKET BASED BILL</SecurityType>
+		<Rate>0.0</Rate>
+		<MaturityDate>05/23/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.896889</BuyPrice>
+		<SellPrice>97.887500</SellPrice>
+		<EODPrice>97.893750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VK3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>06/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.968750</SellPrice>
+		<EODPrice>99.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R93</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>06/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828QT0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>06/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.000000</SellPrice>
+		<EODPrice>100.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XK1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>07/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VQ0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>07/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828QY9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>07/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.062500</SellPrice>
+		<EODPrice>100.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S68</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>07/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.875000</SellPrice>
+		<EODPrice>99.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828K82</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>08/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.875000</SellPrice>
+		<EODPrice>99.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828JH4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.04</Rate>
+		<MaturityDate>08/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.312500</SellPrice>
+		<EODPrice>100.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RE2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>08/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.906250</SellPrice>
+		<EODPrice>99.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282C3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>08/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.750000</SellPrice>
+		<EODPrice>99.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L40</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>09/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.781250</SellPrice>
+		<EODPrice>99.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RH5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>09/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.843750</SellPrice>
+		<EODPrice>99.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T42</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>09/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L81</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>10/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RP7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>10/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.906250</SellPrice>
+		<EODPrice>99.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T83</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>10/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.531250</SellPrice>
+		<EODPrice>99.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WD8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>10/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.718750</SellPrice>
+		<EODPrice>99.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828M64</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>11/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828JR2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0375</Rate>
+		<MaturityDate>11/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.656250</SellPrice>
+		<EODPrice>100.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828A34</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>11/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RT9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>11/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.687500</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U40</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>11/30/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.531250</SellPrice>
+		<EODPrice>99.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N22</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>12/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>99.593750</SellPrice>
+		<EODPrice>99.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RY8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>12/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.593750</BuyPrice>
+		<SellPrice>99.593750</SellPrice>
+		<EODPrice>99.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828A75</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>12/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.656250</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U99</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>12/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.546875</BuyPrice>
+		<SellPrice>99.531250</SellPrice>
+		<EODPrice>99.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N63</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>01/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.406250</BuyPrice>
+		<SellPrice>99.406250</SellPrice>
+		<EODPrice>99.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SD3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>01/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.437500</BuyPrice>
+		<SellPrice>99.437500</SellPrice>
+		<EODPrice>99.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828B33</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>01/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.593750</BuyPrice>
+		<SellPrice>99.593750</SellPrice>
+		<EODPrice>99.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V56</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>01/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.359375</BuyPrice>
+		<SellPrice>99.343750</SellPrice>
+		<EODPrice>99.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828KD1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>02/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.343750</BuyPrice>
+		<SellPrice>100.312500</SellPrice>
+		<EODPrice>100.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P53</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>02/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.062500</BuyPrice>
+		<SellPrice>99.062500</SellPrice>
+		<EODPrice>99.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SH4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>02/28/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.406250</BuyPrice>
+		<SellPrice>99.406250</SellPrice>
+		<EODPrice>99.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828C24</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>02/28/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.484375</BuyPrice>
+		<SellPrice>99.468750</SellPrice>
+		<EODPrice>99.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W30</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>02/28/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.234375</BuyPrice>
+		<SellPrice>99.218750</SellPrice>
+		<EODPrice>99.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P95</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>03/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.093750</BuyPrice>
+		<SellPrice>99.093750</SellPrice>
+		<EODPrice>99.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SN1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>03/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.421875</BuyPrice>
+		<SellPrice>99.406250</SellPrice>
+		<EODPrice>99.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828C65</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>03/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.500000</BuyPrice>
+		<SellPrice>99.500000</SellPrice>
+		<EODPrice>99.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W97</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>03/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.218750</BuyPrice>
+		<SellPrice>99.218750</SellPrice>
+		<EODPrice>99.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828Q52</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>04/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.875000</BuyPrice>
+		<SellPrice>98.875000</SellPrice>
+		<EODPrice>98.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828ST8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>04/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.093750</BuyPrice>
+		<SellPrice>99.093750</SellPrice>
+		<EODPrice>99.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828D23</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>04/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.406250</BuyPrice>
+		<SellPrice>99.406250</SellPrice>
+		<EODPrice>99.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828KQ2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>05/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.703125</BuyPrice>
+		<SellPrice>100.687500</SellPrice>
+		<EODPrice>100.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R44</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>05/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.703125</BuyPrice>
+		<SellPrice>98.687500</SellPrice>
+		<EODPrice>98.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SX9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>05/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.859375</BuyPrice>
+		<SellPrice>98.843750</SellPrice>
+		<EODPrice>98.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WL0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>05/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.203125</BuyPrice>
+		<SellPrice>99.187500</SellPrice>
+		<EODPrice>99.218750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XS4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>05/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.984375</BuyPrice>
+		<SellPrice>98.968750</SellPrice>
+		<EODPrice>98.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R85</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>06/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.578125</BuyPrice>
+		<SellPrice>98.562500</SellPrice>
+		<EODPrice>98.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TC4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>06/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.640625</BuyPrice>
+		<SellPrice>98.625000</SellPrice>
+		<EODPrice>98.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XV7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>06/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.875000</BuyPrice>
+		<SellPrice>98.875000</SellPrice>
+		<EODPrice>98.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WS5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>06/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.250000</BuyPrice>
+		<SellPrice>99.250000</SellPrice>
+		<EODPrice>99.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S43</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>07/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.296875</BuyPrice>
+		<SellPrice>98.281250</SellPrice>
+		<EODPrice>98.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TH3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>07/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.343750</BuyPrice>
+		<SellPrice>98.343750</SellPrice>
+		<EODPrice>98.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WW6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>07/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.156250</BuyPrice>
+		<SellPrice>99.156250</SellPrice>
+		<EODPrice>99.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282K5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>07/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.890625</BuyPrice>
+		<SellPrice>98.875000</SellPrice>
+		<EODPrice>98.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282B5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>08/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.156250</BuyPrice>
+		<SellPrice>98.156250</SellPrice>
+		<EODPrice>98.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828LJ7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>08/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.359375</BuyPrice>
+		<SellPrice>101.343750</SellPrice>
+		<EODPrice>101.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828D80</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>08/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.078125</BuyPrice>
+		<SellPrice>99.062500</SellPrice>
+		<EODPrice>99.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TN0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>08/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.328125</BuyPrice>
+		<SellPrice>98.312500</SellPrice>
+		<EODPrice>98.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282T6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>08/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.640625</BuyPrice>
+		<SellPrice>98.625000</SellPrice>
+		<EODPrice>98.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282G4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>09/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.109375</BuyPrice>
+		<SellPrice>98.093750</SellPrice>
+		<EODPrice>98.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282X7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>09/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.671875</BuyPrice>
+		<SellPrice>98.656250</SellPrice>
+		<EODPrice>98.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TR1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>09/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.203125</BuyPrice>
+		<SellPrice>98.187500</SellPrice>
+		<EODPrice>98.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828F39</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>09/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.140625</BuyPrice>
+		<SellPrice>99.125000</SellPrice>
+		<EODPrice>99.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T59</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>10/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.109375</BuyPrice>
+		<SellPrice>98.093750</SellPrice>
+		<EODPrice>98.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828F62</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>10/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.703125</BuyPrice>
+		<SellPrice>98.687500</SellPrice>
+		<EODPrice>98.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TV2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>10/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.390625</BuyPrice>
+		<SellPrice>98.375000</SellPrice>
+		<EODPrice>98.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828LY4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03375</Rate>
+		<MaturityDate>11/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.234375</BuyPrice>
+		<SellPrice>101.218750</SellPrice>
+		<EODPrice>101.218750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U32</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>11/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.984375</BuyPrice>
+		<SellPrice>97.968750</SellPrice>
+		<EODPrice>98.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UB4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>11/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.906250</BuyPrice>
+		<SellPrice>97.906250</SellPrice>
+		<EODPrice>97.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828G61</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>11/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.609375</BuyPrice>
+		<SellPrice>98.593750</SellPrice>
+		<EODPrice>98.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283H1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>11/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.968750</BuyPrice>
+		<SellPrice>98.968750</SellPrice>
+		<EODPrice>98.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U73</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>12/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.390625</BuyPrice>
+		<SellPrice>98.375000</SellPrice>
+		<EODPrice>98.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UF5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>12/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.968750</BuyPrice>
+		<SellPrice>97.968750</SellPrice>
+		<EODPrice>97.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828G95</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>12/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.703125</BuyPrice>
+		<SellPrice>98.687500</SellPrice>
+		<EODPrice>98.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283N8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>12/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.078125</BuyPrice>
+		<SellPrice>99.062500</SellPrice>
+		<EODPrice>99.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V31</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>01/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.281250</BuyPrice>
+		<SellPrice>98.281250</SellPrice>
+		<EODPrice>98.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UL2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>01/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.250000</BuyPrice>
+		<SellPrice>98.250000</SellPrice>
+		<EODPrice>98.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828H52</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>01/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.046875</BuyPrice>
+		<SellPrice>98.031250</SellPrice>
+		<EODPrice>98.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283S7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>01/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.218750</BuyPrice>
+		<SellPrice>99.218750</SellPrice>
+		<EODPrice>99.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W22</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>02/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.171875</BuyPrice>
+		<SellPrice>98.156250</SellPrice>
+		<EODPrice>98.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828MP2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>02/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.796875</BuyPrice>
+		<SellPrice>101.781250</SellPrice>
+		<EODPrice>101.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828J50</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>02/29/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.109375</BuyPrice>
+		<SellPrice>98.093750</SellPrice>
+		<EODPrice>98.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UQ1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>02/29/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.906250</BuyPrice>
+		<SellPrice>97.906250</SellPrice>
+		<EODPrice>97.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283Y4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>02/29/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.578125</BuyPrice>
+		<SellPrice>99.562500</SellPrice>
+		<EODPrice>99.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W63</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>03/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.484375</BuyPrice>
+		<SellPrice>98.468750</SellPrice>
+		<EODPrice>98.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UV0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>03/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.578125</BuyPrice>
+		<SellPrice>97.562500</SellPrice>
+		<EODPrice>97.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828J84</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>03/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.015625</BuyPrice>
+		<SellPrice>98.000000</SellPrice>
+		<EODPrice>98.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284C1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>03/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.531250</BuyPrice>
+		<SellPrice>99.531250</SellPrice>
+		<EODPrice>99.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X21</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>04/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.171875</BuyPrice>
+		<SellPrice>98.156250</SellPrice>
+		<EODPrice>98.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VA5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>04/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.468750</BuyPrice>
+		<SellPrice>97.468750</SellPrice>
+		<EODPrice>97.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828K58</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>04/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.921875</BuyPrice>
+		<SellPrice>97.906250</SellPrice>
+		<EODPrice>97.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284J6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>04/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.718750</BuyPrice>
+		<SellPrice>99.718750</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828ND8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.035</Rate>
+		<MaturityDate>05/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.765625</BuyPrice>
+		<SellPrice>101.750000</SellPrice>
+		<EODPrice>101.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X96</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>05/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.093750</BuyPrice>
+		<SellPrice>98.093750</SellPrice>
+		<EODPrice>98.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XE5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>05/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.031250</BuyPrice>
+		<SellPrice>98.031250</SellPrice>
+		<EODPrice>98.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284Q0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>05/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.937500</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VF4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>05/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.796875</BuyPrice>
+		<SellPrice>97.781250</SellPrice>
+		<EODPrice>97.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XU9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>06/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.000000</BuyPrice>
+		<SellPrice>98.000000</SellPrice>
+		<EODPrice>98.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XH8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>06/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.187500</BuyPrice>
+		<SellPrice>98.187500</SellPrice>
+		<EODPrice>98.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VJ6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>06/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.671875</BuyPrice>
+		<SellPrice>98.656250</SellPrice>
+		<EODPrice>98.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282J8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>07/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.890625</BuyPrice>
+		<SellPrice>97.875000</SellPrice>
+		<EODPrice>97.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XM7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>07/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.093750</BuyPrice>
+		<SellPrice>98.093750</SellPrice>
+		<EODPrice>98.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VP2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>07/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.859375</BuyPrice>
+		<SellPrice>98.843750</SellPrice>
+		<EODPrice>98.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282Q2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>08/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.781250</BuyPrice>
+		<SellPrice>97.781250</SellPrice>
+		<EODPrice>97.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828NT3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>08/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.109375</BuyPrice>
+		<SellPrice>100.093750</SellPrice>
+		<EODPrice>100.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L32</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>08/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.453125</BuyPrice>
+		<SellPrice>97.437500</SellPrice>
+		<EODPrice>97.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VV9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>08/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.046875</BuyPrice>
+		<SellPrice>99.031250</SellPrice>
+		<EODPrice>99.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282V1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>09/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.406250</BuyPrice>
+		<SellPrice>97.406250</SellPrice>
+		<EODPrice>97.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VZ0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>09/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.718750</BuyPrice>
+		<SellPrice>98.718750</SellPrice>
+		<EODPrice>98.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L65</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>09/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.343750</BuyPrice>
+		<SellPrice>97.343750</SellPrice>
+		<EODPrice>97.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282Z2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>10/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.843750</BuyPrice>
+		<SellPrice>97.843750</SellPrice>
+		<EODPrice>97.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WC0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>10/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.078125</BuyPrice>
+		<SellPrice>98.062500</SellPrice>
+		<EODPrice>98.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L99</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>10/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.203125</BuyPrice>
+		<SellPrice>97.187500</SellPrice>
+		<EODPrice>97.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828PC8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>11/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.062500</BuyPrice>
+		<SellPrice>100.031250</SellPrice>
+		<EODPrice>100.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283G3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>11/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.046875</BuyPrice>
+		<SellPrice>98.031250</SellPrice>
+		<EODPrice>98.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828M98</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>11/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.703125</BuyPrice>
+		<SellPrice>97.687500</SellPrice>
+		<EODPrice>97.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828A42</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>11/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.578125</BuyPrice>
+		<SellPrice>98.562500</SellPrice>
+		<EODPrice>98.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283L2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>12/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.265625</BuyPrice>
+		<SellPrice>98.250000</SellPrice>
+		<EODPrice>98.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828A83</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>12/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.437500</BuyPrice>
+		<SellPrice>99.437500</SellPrice>
+		<EODPrice>99.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N48</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>12/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.906250</BuyPrice>
+		<SellPrice>97.906250</SellPrice>
+		<EODPrice>97.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283Q1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>01/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.484375</BuyPrice>
+		<SellPrice>98.468750</SellPrice>
+		<EODPrice>98.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N89</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>01/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.875000</BuyPrice>
+		<SellPrice>96.875000</SellPrice>
+		<EODPrice>96.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828B58</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>01/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.765625</BuyPrice>
+		<SellPrice>98.750000</SellPrice>
+		<EODPrice>98.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828PX2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>02/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.562500</BuyPrice>
+		<SellPrice>102.531250</SellPrice>
+		<EODPrice>102.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283X6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>02/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.046875</BuyPrice>
+		<SellPrice>99.031250</SellPrice>
+		<EODPrice>99.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P87</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>02/28/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.125000</BuyPrice>
+		<SellPrice>96.125000</SellPrice>
+		<EODPrice>96.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828B90</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>02/28/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.390625</BuyPrice>
+		<SellPrice>98.375000</SellPrice>
+		<EODPrice>98.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284B3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>03/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.343750</BuyPrice>
+		<SellPrice>99.343750</SellPrice>
+		<EODPrice>99.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828C57</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>03/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.984375</BuyPrice>
+		<SellPrice>98.968750</SellPrice>
+		<EODPrice>99.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828Q37</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>03/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.328125</BuyPrice>
+		<SellPrice>96.312500</SellPrice>
+		<EODPrice>96.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284G2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>04/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.296875</BuyPrice>
+		<SellPrice>99.281250</SellPrice>
+		<EODPrice>99.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828Q78</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>04/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.546875</BuyPrice>
+		<SellPrice>96.531250</SellPrice>
+		<EODPrice>96.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WG1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>04/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.953125</BuyPrice>
+		<SellPrice>98.937500</SellPrice>
+		<EODPrice>98.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828QN3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>05/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.359375</BuyPrice>
+		<SellPrice>101.343750</SellPrice>
+		<EODPrice>101.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284P2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>05/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.953125</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R77</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>05/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.406250</BuyPrice>
+		<SellPrice>96.406250</SellPrice>
+		<EODPrice>96.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WN6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>05/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.187500</BuyPrice>
+		<SellPrice>98.187500</SellPrice>
+		<EODPrice>98.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284T4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>06/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.953125</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WR7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>06/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.484375</BuyPrice>
+		<SellPrice>98.468750</SellPrice>
+		<EODPrice>98.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S27</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>06/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.578125</BuyPrice>
+		<SellPrice>95.562500</SellPrice>
+		<EODPrice>95.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S76</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>07/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.421875</BuyPrice>
+		<SellPrice>95.406250</SellPrice>
+		<EODPrice>95.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WY2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>07/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.765625</BuyPrice>
+		<SellPrice>98.750000</SellPrice>
+		<EODPrice>98.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RC6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>08/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.359375</BuyPrice>
+		<SellPrice>98.343750</SellPrice>
+		<EODPrice>98.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828D72</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>08/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.937500</BuyPrice>
+		<SellPrice>97.937500</SellPrice>
+		<EODPrice>97.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282F6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>08/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.281250</BuyPrice>
+		<SellPrice>95.281250</SellPrice>
+		<EODPrice>95.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T34</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>09/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.140625</BuyPrice>
+		<SellPrice>95.125000</SellPrice>
+		<EODPrice>95.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828F21</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>09/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.265625</BuyPrice>
+		<SellPrice>98.250000</SellPrice>
+		<EODPrice>98.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828F96</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>10/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.796875</BuyPrice>
+		<SellPrice>97.781250</SellPrice>
+		<EODPrice>97.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T67</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>10/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.406250</BuyPrice>
+		<SellPrice>95.406250</SellPrice>
+		<EODPrice>95.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828RR3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>11/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.781250</BuyPrice>
+		<SellPrice>97.750000</SellPrice>
+		<EODPrice>97.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828G53</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>11/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.328125</BuyPrice>
+		<SellPrice>97.312500</SellPrice>
+		<EODPrice>97.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U65</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>11/30/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.906250</BuyPrice>
+		<SellPrice>96.906250</SellPrice>
+		<EODPrice>96.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U81</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>12/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.640625</BuyPrice>
+		<SellPrice>97.625000</SellPrice>
+		<EODPrice>97.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828G87</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>12/31/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.078125</BuyPrice>
+		<SellPrice>98.062500</SellPrice>
+		<EODPrice>98.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828H86</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>01/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.859375</BuyPrice>
+		<SellPrice>95.843750</SellPrice>
+		<EODPrice>95.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V72</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>01/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.140625</BuyPrice>
+		<SellPrice>97.125000</SellPrice>
+		<EODPrice>97.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SF8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>02/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.546875</BuyPrice>
+		<SellPrice>97.531250</SellPrice>
+		<EODPrice>97.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828J43</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>02/28/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.609375</BuyPrice>
+		<SellPrice>96.593750</SellPrice>
+		<EODPrice>96.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W55</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>02/28/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.062500</BuyPrice>
+		<SellPrice>97.062500</SellPrice>
+		<EODPrice>97.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W89</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>03/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.984375</BuyPrice>
+		<SellPrice>96.968750</SellPrice>
+		<EODPrice>96.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828J76</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>03/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.546875</BuyPrice>
+		<SellPrice>96.531250</SellPrice>
+		<EODPrice>96.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WZ9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>04/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.421875</BuyPrice>
+		<SellPrice>96.406250</SellPrice>
+		<EODPrice>96.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X47</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>04/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.890625</BuyPrice>
+		<SellPrice>96.875000</SellPrice>
+		<EODPrice>96.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SV3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>05/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.390625</BuyPrice>
+		<SellPrice>96.375000</SellPrice>
+		<EODPrice>96.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XR6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>05/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.343750</BuyPrice>
+		<SellPrice>96.343750</SellPrice>
+		<EODPrice>96.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XD7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>05/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.828125</BuyPrice>
+		<SellPrice>96.812500</SellPrice>
+		<EODPrice>96.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XG0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>06/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.687500</BuyPrice>
+		<SellPrice>97.687500</SellPrice>
+		<EODPrice>97.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XW5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>06/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.265625</BuyPrice>
+		<SellPrice>96.250000</SellPrice>
+		<EODPrice>96.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XQ8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>07/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.140625</BuyPrice>
+		<SellPrice>97.125000</SellPrice>
+		<EODPrice>97.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282P4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>07/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.656250</BuyPrice>
+		<SellPrice>96.656250</SellPrice>
+		<EODPrice>96.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TJ9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>08/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.625000</BuyPrice>
+		<SellPrice>95.593750</SellPrice>
+		<EODPrice>95.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L24</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>08/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.562500</BuyPrice>
+		<SellPrice>96.562500</SellPrice>
+		<EODPrice>96.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282S8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>08/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.593750</BuyPrice>
+		<SellPrice>95.593750</SellPrice>
+		<EODPrice>95.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282W9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>09/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.500000</BuyPrice>
+		<SellPrice>96.500000</SellPrice>
+		<EODPrice>96.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828L57</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>09/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.984375</BuyPrice>
+		<SellPrice>95.968750</SellPrice>
+		<EODPrice>95.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828M49</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>10/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.421875</BuyPrice>
+		<SellPrice>96.406250</SellPrice>
+		<EODPrice>96.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283C2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>10/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.937500</BuyPrice>
+		<SellPrice>96.937500</SellPrice>
+		<EODPrice>96.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TY6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>11/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.359375</BuyPrice>
+		<SellPrice>95.343750</SellPrice>
+		<EODPrice>95.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828M80</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>11/30/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.890625</BuyPrice>
+		<SellPrice>96.875000</SellPrice>
+		<EODPrice>96.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N30</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>12/31/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.328125</BuyPrice>
+		<SellPrice>97.312500</SellPrice>
+		<EODPrice>97.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P38</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>01/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.640625</BuyPrice>
+		<SellPrice>95.625000</SellPrice>
+		<EODPrice>95.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283U2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>01/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.343750</BuyPrice>
+		<SellPrice>98.343750</SellPrice>
+		<EODPrice>98.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UN8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>02/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.718750</BuyPrice>
+		<SellPrice>96.718750</SellPrice>
+		<EODPrice>96.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284A5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>02/28/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.437500</BuyPrice>
+		<SellPrice>99.437500</SellPrice>
+		<EODPrice>99.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P79</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>02/28/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.468750</BuyPrice>
+		<SellPrice>94.468750</SellPrice>
+		<EODPrice>94.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828Q29</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>03/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.375000</BuyPrice>
+		<SellPrice>94.375000</SellPrice>
+		<EODPrice>94.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284D9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>03/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.843750</BuyPrice>
+		<SellPrice>98.843750</SellPrice>
+		<EODPrice>98.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284L1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>04/30/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.937500</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R28</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>04/30/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.828125</BuyPrice>
+		<SellPrice>94.812500</SellPrice>
+		<EODPrice>94.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VB3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>05/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.328125</BuyPrice>
+		<SellPrice>95.312500</SellPrice>
+		<EODPrice>95.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R69</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>05/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.734375</BuyPrice>
+		<SellPrice>94.718750</SellPrice>
+		<EODPrice>94.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284S6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>05/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.937500</BuyPrice>
+		<SellPrice>99.937500</SellPrice>
+		<EODPrice>99.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S35</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>06/30/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>93.453125</BuyPrice>
+		<SellPrice>93.437500</SellPrice>
+		<EODPrice>93.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S92</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>07/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>92.734375</BuyPrice>
+		<SellPrice>92.718750</SellPrice>
+		<EODPrice>92.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VS6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>08/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.640625</BuyPrice>
+		<SellPrice>98.625000</SellPrice>
+		<EODPrice>98.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282D1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>08/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>93.203125</BuyPrice>
+		<SellPrice>93.187500</SellPrice>
+		<EODPrice>93.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T26</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>09/30/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>93.078125</BuyPrice>
+		<SellPrice>93.062500</SellPrice>
+		<EODPrice>93.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T91</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>10/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.203125</BuyPrice>
+		<SellPrice>94.187500</SellPrice>
+		<EODPrice>94.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WE6</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>11/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.796875</BuyPrice>
+		<SellPrice>99.781250</SellPrice>
+		<EODPrice>99.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U57</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>11/30/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.609375</BuyPrice>
+		<SellPrice>96.593750</SellPrice>
+		<EODPrice>96.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V23</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>12/31/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.171875</BuyPrice>
+		<SellPrice>97.156250</SellPrice>
+		<EODPrice>97.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V80</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>01/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.109375</BuyPrice>
+		<SellPrice>97.093750</SellPrice>
+		<EODPrice>97.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828B66</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>02/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.703125</BuyPrice>
+		<SellPrice>99.687500</SellPrice>
+		<EODPrice>99.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W48</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>02/29/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.390625</BuyPrice>
+		<SellPrice>96.375000</SellPrice>
+		<EODPrice>96.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828W71</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>03/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.328125</BuyPrice>
+		<SellPrice>96.312500</SellPrice>
+		<EODPrice>96.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X70</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>04/30/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.578125</BuyPrice>
+		<SellPrice>95.562500</SellPrice>
+		<EODPrice>95.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WJ5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>05/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.234375</BuyPrice>
+		<SellPrice>98.218750</SellPrice>
+		<EODPrice>98.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XT2</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>05/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.500000</BuyPrice>
+		<SellPrice>95.500000</SellPrice>
+		<EODPrice>95.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XX3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>06/30/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.421875</BuyPrice>
+		<SellPrice>95.406250</SellPrice>
+		<EODPrice>95.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282N9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>07/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.046875</BuyPrice>
+		<SellPrice>96.031250</SellPrice>
+		<EODPrice>96.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828D56</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>08/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.421875</BuyPrice>
+		<SellPrice>97.406250</SellPrice>
+		<EODPrice>97.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282U3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>08/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.640625</BuyPrice>
+		<SellPrice>94.625000</SellPrice>
+		<EODPrice>94.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282Y5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>09/30/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.921875</BuyPrice>
+		<SellPrice>95.906250</SellPrice>
+		<EODPrice>95.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283D0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>10/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.578125</BuyPrice>
+		<SellPrice>96.562500</SellPrice>
+		<EODPrice>96.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828G38</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>11/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.546875</BuyPrice>
+		<SellPrice>96.531250</SellPrice>
+		<EODPrice>96.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283J7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>11/30/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.796875</BuyPrice>
+		<SellPrice>95.781250</SellPrice>
+		<EODPrice>95.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283P3</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>12/31/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.484375</BuyPrice>
+		<SellPrice>96.468750</SellPrice>
+		<EODPrice>96.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283V0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>01/31/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.953125</BuyPrice>
+		<SellPrice>97.937500</SellPrice>
+		<EODPrice>98.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828J27</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>02/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.890625</BuyPrice>
+		<SellPrice>94.875000</SellPrice>
+		<EODPrice>94.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283Z1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>02/28/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.421875</BuyPrice>
+		<SellPrice>99.406250</SellPrice>
+		<EODPrice>99.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284F4</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02625</Rate>
+		<MaturityDate>03/31/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.625000</BuyPrice>
+		<SellPrice>98.625000</SellPrice>
+		<EODPrice>98.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284M9</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>04/30/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.171875</BuyPrice>
+		<SellPrice>100.156250</SellPrice>
+		<EODPrice>100.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XB1</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>05/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.453125</BuyPrice>
+		<SellPrice>95.437500</SellPrice>
+		<EODPrice>95.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284R8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>05/31/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.156250</BuyPrice>
+		<SellPrice>100.156250</SellPrice>
+		<EODPrice>100.218750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828K74</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>08/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.468750</BuyPrice>
+		<SellPrice>94.468750</SellPrice>
+		<EODPrice>94.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828M56</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>11/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.890625</BuyPrice>
+		<SellPrice>95.875000</SellPrice>
+		<EODPrice>95.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828P46</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>02/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>91.453125</BuyPrice>
+		<SellPrice>91.437500</SellPrice>
+		<EODPrice>91.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828R36</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.01625</Rate>
+		<MaturityDate>05/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>91.171875</BuyPrice>
+		<SellPrice>91.156250</SellPrice>
+		<EODPrice>91.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282A7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.015</Rate>
+		<MaturityDate>08/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>89.984375</BuyPrice>
+		<SellPrice>89.968750</SellPrice>
+		<EODPrice>90.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828U24</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>11/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>93.421875</BuyPrice>
+		<SellPrice>93.406250</SellPrice>
+		<EODPrice>93.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V98</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>02/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.140625</BuyPrice>
+		<SellPrice>95.125000</SellPrice>
+		<EODPrice>95.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X88</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>05/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.015625</BuyPrice>
+		<SellPrice>96.000000</SellPrice>
+		<EODPrice>96.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282R0</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>08/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.859375</BuyPrice>
+		<SellPrice>94.843750</SellPrice>
+		<EODPrice>94.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283F5</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>11/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.734375</BuyPrice>
+		<SellPrice>94.718750</SellPrice>
+		<EODPrice>94.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283W8</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>02/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.812500</BuyPrice>
+		<SellPrice>98.812500</SellPrice>
+		<EODPrice>98.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284N7</Cusip>
+		<SecurityType>MARKET BASED NOTE</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>05/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.890625</BuyPrice>
+		<SellPrice>99.875000</SellPrice>
+		<EODPrice>99.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EB0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.09</Rate>
+		<MaturityDate>11/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>102.718750</SellPrice>
+		<EODPrice>102.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EC8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.08875</Rate>
+		<MaturityDate>02/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>104.375000</BuyPrice>
+		<SellPrice>104.281250</SellPrice>
+		<EODPrice>104.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810ED6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.08125</Rate>
+		<MaturityDate>08/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>106.468750</BuyPrice>
+		<SellPrice>106.406250</SellPrice>
+		<EODPrice>106.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EE4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.085</Rate>
+		<MaturityDate>02/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>109.734375</BuyPrice>
+		<SellPrice>109.656250</SellPrice>
+		<EODPrice>109.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EF1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0875</Rate>
+		<MaturityDate>05/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>111.640625</BuyPrice>
+		<SellPrice>111.562500</SellPrice>
+		<EODPrice>111.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EG9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0875</Rate>
+		<MaturityDate>08/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>112.890625</BuyPrice>
+		<SellPrice>112.812500</SellPrice>
+		<EODPrice>112.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EH7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.07875</Rate>
+		<MaturityDate>02/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>113.453125</BuyPrice>
+		<SellPrice>113.406250</SellPrice>
+		<EODPrice>113.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EJ3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.08125</Rate>
+		<MaturityDate>05/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>115.265625</BuyPrice>
+		<SellPrice>115.218750</SellPrice>
+		<EODPrice>115.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EK0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.08125</Rate>
+		<MaturityDate>08/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>116.484375</BuyPrice>
+		<SellPrice>116.406250</SellPrice>
+		<EODPrice>116.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EL8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.08</Rate>
+		<MaturityDate>11/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>117.218750</BuyPrice>
+		<SellPrice>117.156250</SellPrice>
+		<EODPrice>117.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EM6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0725</Rate>
+		<MaturityDate>08/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>117.750000</BuyPrice>
+		<SellPrice>117.687500</SellPrice>
+		<EODPrice>117.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EN4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.07625</Rate>
+		<MaturityDate>11/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>120.187500</BuyPrice>
+		<SellPrice>120.125000</SellPrice>
+		<EODPrice>120.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EP9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.07125</Rate>
+		<MaturityDate>02/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>119.031250</BuyPrice>
+		<SellPrice>118.937500</SellPrice>
+		<EODPrice>118.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EQ7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0625</Rate>
+		<MaturityDate>08/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>116.656250</BuyPrice>
+		<SellPrice>116.593750</SellPrice>
+		<EODPrice>116.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810ES3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.075</Rate>
+		<MaturityDate>11/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>127.343750</BuyPrice>
+		<SellPrice>127.281250</SellPrice>
+		<EODPrice>127.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810ET1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.07625</Rate>
+		<MaturityDate>02/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>128.953125</BuyPrice>
+		<SellPrice>128.906250</SellPrice>
+		<EODPrice>128.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EV6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06875</Rate>
+		<MaturityDate>08/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.140625</BuyPrice>
+		<SellPrice>126.031250</SellPrice>
+		<EODPrice>126.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EW4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06</Rate>
+		<MaturityDate>02/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>121.625000</BuyPrice>
+		<SellPrice>121.562500</SellPrice>
+		<EODPrice>121.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EX2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0675</Rate>
+		<MaturityDate>08/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>128.296875</BuyPrice>
+		<SellPrice>128.187500</SellPrice>
+		<EODPrice>128.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EY0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.065</Rate>
+		<MaturityDate>11/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>127.109375</BuyPrice>
+		<SellPrice>127.031250</SellPrice>
+		<EODPrice>127.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810EZ7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06625</Rate>
+		<MaturityDate>02/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>128.812500</BuyPrice>
+		<SellPrice>128.687500</SellPrice>
+		<EODPrice>128.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FA1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06375</Rate>
+		<MaturityDate>08/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>128.093750</BuyPrice>
+		<SellPrice>128.031250</SellPrice>
+		<EODPrice>128.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FB9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06125</Rate>
+		<MaturityDate>11/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.578125</BuyPrice>
+		<SellPrice>126.531250</SellPrice>
+		<EODPrice>126.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FE3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.055</Rate>
+		<MaturityDate>08/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>122.843750</BuyPrice>
+		<SellPrice>122.781250</SellPrice>
+		<EODPrice>122.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FF0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0525</Rate>
+		<MaturityDate>11/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>121.078125</BuyPrice>
+		<SellPrice>121.031250</SellPrice>
+		<EODPrice>121.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FG8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0525</Rate>
+		<MaturityDate>02/15/2029</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>121.484375</BuyPrice>
+		<SellPrice>121.437500</SellPrice>
+		<EODPrice>121.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FJ2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.06125</Rate>
+		<MaturityDate>08/15/2029</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>130.609375</BuyPrice>
+		<SellPrice>130.562500</SellPrice>
+		<EODPrice>130.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FM5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0625</Rate>
+		<MaturityDate>05/15/2030</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>133.531250</BuyPrice>
+		<SellPrice>133.468750</SellPrice>
+		<EODPrice>133.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FP8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.05375</Rate>
+		<MaturityDate>02/15/2031</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.015625</BuyPrice>
+		<SellPrice>125.968750</SellPrice>
+		<EODPrice>125.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FT0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.045</Rate>
+		<MaturityDate>02/15/2036</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>121.734375</BuyPrice>
+		<SellPrice>121.687500</SellPrice>
+		<EODPrice>121.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PT9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0475</Rate>
+		<MaturityDate>02/15/2037</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.187500</BuyPrice>
+		<SellPrice>126.156250</SellPrice>
+		<EODPrice>126.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PU6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.05</Rate>
+		<MaturityDate>05/15/2037</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>129.968750</BuyPrice>
+		<SellPrice>129.937500</SellPrice>
+		<EODPrice>129.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PW2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.04375</Rate>
+		<MaturityDate>02/15/2038</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>121.296875</BuyPrice>
+		<SellPrice>121.250000</SellPrice>
+		<EODPrice>121.218750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PX0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.045</Rate>
+		<MaturityDate>05/15/2038</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>123.359375</BuyPrice>
+		<SellPrice>123.312500</SellPrice>
+		<EODPrice>123.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QA9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.035</Rate>
+		<MaturityDate>02/15/2039</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>108.375000</BuyPrice>
+		<SellPrice>108.343750</SellPrice>
+		<EODPrice>108.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QB7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0425</Rate>
+		<MaturityDate>05/15/2039</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>120.015625</BuyPrice>
+		<SellPrice>119.968750</SellPrice>
+		<EODPrice>119.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QC5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.045</Rate>
+		<MaturityDate>08/15/2039</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>124.046875</BuyPrice>
+		<SellPrice>124.000000</SellPrice>
+		<EODPrice>123.937500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QD3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.04375</Rate>
+		<MaturityDate>11/15/2039</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>122.203125</BuyPrice>
+		<SellPrice>122.156250</SellPrice>
+		<EODPrice>122.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QE1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.04625</Rate>
+		<MaturityDate>02/15/2040</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.265625</BuyPrice>
+		<SellPrice>126.218750</SellPrice>
+		<EODPrice>126.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QH4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.04375</Rate>
+		<MaturityDate>05/15/2040</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>122.421875</BuyPrice>
+		<SellPrice>122.375000</SellPrice>
+		<EODPrice>122.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QK7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03875</Rate>
+		<MaturityDate>08/15/2040</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>114.406250</BuyPrice>
+		<SellPrice>114.375000</SellPrice>
+		<EODPrice>114.312500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QL5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0425</Rate>
+		<MaturityDate>11/15/2040</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>120.578125</BuyPrice>
+		<SellPrice>120.531250</SellPrice>
+		<EODPrice>120.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QN1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0475</Rate>
+		<MaturityDate>02/15/2041</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>128.921875</BuyPrice>
+		<SellPrice>128.875000</SellPrice>
+		<EODPrice>128.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QQ4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.04375</Rate>
+		<MaturityDate>05/15/2041</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>122.859375</BuyPrice>
+		<SellPrice>122.812500</SellPrice>
+		<EODPrice>122.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QS0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0375</Rate>
+		<MaturityDate>08/15/2041</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>112.546875</BuyPrice>
+		<SellPrice>112.500000</SellPrice>
+		<EODPrice>112.437500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QT8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>11/15/2041</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.093750</BuyPrice>
+		<SellPrice>102.062500</SellPrice>
+		<EODPrice>102.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QU5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>02/15/2042</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.093750</BuyPrice>
+		<SellPrice>102.062500</SellPrice>
+		<EODPrice>102.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QW1</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>05/15/2042</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.953125</BuyPrice>
+		<SellPrice>99.906250</SellPrice>
+		<EODPrice>99.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QX9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>08/15/2042</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.593750</BuyPrice>
+		<SellPrice>95.562500</SellPrice>
+		<EODPrice>95.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QY7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>11/15/2042</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.531250</BuyPrice>
+		<SellPrice>95.500000</SellPrice>
+		<EODPrice>95.406250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QZ4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>02/15/2043</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.984375</BuyPrice>
+		<SellPrice>101.937500</SellPrice>
+		<EODPrice>101.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RB6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>05/15/2043</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.593750</BuyPrice>
+		<SellPrice>97.562500</SellPrice>
+		<EODPrice>97.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RC4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>08/15/2043</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>110.750000</BuyPrice>
+		<SellPrice>110.718750</SellPrice>
+		<EODPrice>110.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RD2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0375</Rate>
+		<MaturityDate>11/15/2043</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>113.000000</BuyPrice>
+		<SellPrice>112.968750</SellPrice>
+		<EODPrice>112.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RE0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>02/15/2044</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>110.859375</BuyPrice>
+		<SellPrice>110.843750</SellPrice>
+		<EODPrice>110.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RG5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03375</Rate>
+		<MaturityDate>05/15/2044</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>106.453125</BuyPrice>
+		<SellPrice>106.437500</SellPrice>
+		<EODPrice>106.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RH3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>08/15/2044</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.000000</BuyPrice>
+		<SellPrice>101.968750</SellPrice>
+		<EODPrice>101.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RJ9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>11/15/2044</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.734375</BuyPrice>
+		<SellPrice>99.718750</SellPrice>
+		<EODPrice>99.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RK6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>02/15/2045</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>90.546875</BuyPrice>
+		<SellPrice>90.531250</SellPrice>
+		<EODPrice>90.468750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RM2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>05/15/2045</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.718750</BuyPrice>
+		<SellPrice>99.687500</SellPrice>
+		<EODPrice>99.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RN0</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>08/15/2045</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.359375</BuyPrice>
+		<SellPrice>97.343750</SellPrice>
+		<EODPrice>97.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RP5</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>11/15/2045</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.687500</BuyPrice>
+		<SellPrice>99.656250</SellPrice>
+		<EODPrice>99.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RQ3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>02/15/2046</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>90.296875</BuyPrice>
+		<SellPrice>90.281250</SellPrice>
+		<EODPrice>90.218750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RS9</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>05/15/2046</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>90.234375</BuyPrice>
+		<SellPrice>90.218750</SellPrice>
+		<EODPrice>90.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RT7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0225</Rate>
+		<MaturityDate>08/15/2046</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>85.453125</BuyPrice>
+		<SellPrice>85.437500</SellPrice>
+		<EODPrice>85.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RU4</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.02875</Rate>
+		<MaturityDate>11/15/2046</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.234375</BuyPrice>
+		<SellPrice>97.218750</SellPrice>
+		<EODPrice>97.125000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RV2</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>02/15/2047</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.640625</BuyPrice>
+		<SellPrice>99.625000</SellPrice>
+		<EODPrice>99.562500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RX8</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>05/15/2047</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.609375</BuyPrice>
+		<SellPrice>99.593750</SellPrice>
+		<EODPrice>99.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RY6</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>08/15/2047</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.734375</BuyPrice>
+		<SellPrice>94.718750</SellPrice>
+		<EODPrice>94.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RZ3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.0275</Rate>
+		<MaturityDate>11/15/2047</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.703125</BuyPrice>
+		<SellPrice>94.687500</SellPrice>
+		<EODPrice>94.625000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810SA7</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03</Rate>
+		<MaturityDate>02/15/2048</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.609375</BuyPrice>
+		<SellPrice>99.593750</SellPrice>
+		<EODPrice>99.500000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810SC3</Cusip>
+		<SecurityType>MARKET BASED BOND</SecurityType>
+		<Rate>0.03125</Rate>
+		<MaturityDate>05/15/2048</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.062500</BuyPrice>
+		<SellPrice>102.062500</SellPrice>
+		<EODPrice>101.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828JE1</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>07/15/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.250000</SellPrice>
+		<EODPrice>100.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828JX9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>01/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.812500</BuyPrice>
+		<SellPrice>100.781250</SellPrice>
+		<EODPrice>100.781250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828C99</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>04/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.359375</BuyPrice>
+		<SellPrice>99.343750</SellPrice>
+		<EODPrice>99.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828LA6</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01875</Rate>
+		<MaturityDate>07/15/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.625000</BuyPrice>
+		<SellPrice>101.593750</SellPrice>
+		<EODPrice>101.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828MF4</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>01/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.140625</BuyPrice>
+		<SellPrice>101.125000</SellPrice>
+		<EODPrice>101.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828K33</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>04/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.890625</BuyPrice>
+		<SellPrice>98.875000</SellPrice>
+		<EODPrice>98.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828NM8</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0125</Rate>
+		<MaturityDate>07/15/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.609375</BuyPrice>
+		<SellPrice>101.593750</SellPrice>
+		<EODPrice>101.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828PP9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01125</Rate>
+		<MaturityDate>01/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>101.296875</BuyPrice>
+		<SellPrice>101.281250</SellPrice>
+		<EODPrice>101.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828Q60</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>04/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.375000</BuyPrice>
+		<SellPrice>98.343750</SellPrice>
+		<EODPrice>98.343750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828QV5</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>07/15/2021</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.312500</BuyPrice>
+		<SellPrice>100.281250</SellPrice>
+		<EODPrice>100.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828SA9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>01/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.187500</BuyPrice>
+		<SellPrice>98.156250</SellPrice>
+		<EODPrice>98.156250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X39</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>04/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.828125</BuyPrice>
+		<SellPrice>97.812500</SellPrice>
+		<EODPrice>97.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828TE0</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>07/15/2022</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.234375</BuyPrice>
+		<SellPrice>98.187500</SellPrice>
+		<EODPrice>98.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828UH1</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>01/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.625000</BuyPrice>
+		<SellPrice>97.593750</SellPrice>
+		<EODPrice>97.593750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284H0</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>04/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.718750</BuyPrice>
+		<SellPrice>99.687500</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828VM9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00375</Rate>
+		<MaturityDate>07/15/2023</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.953125</BuyPrice>
+		<SellPrice>98.906250</SellPrice>
+		<EODPrice>98.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828B25</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>01/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.734375</BuyPrice>
+		<SellPrice>99.687500</SellPrice>
+		<EODPrice>99.687500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828WU0</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>07/15/2024</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.046875</BuyPrice>
+		<SellPrice>97.000000</SellPrice>
+		<EODPrice>97.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828H45</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0025</Rate>
+		<MaturityDate>01/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.125000</BuyPrice>
+		<SellPrice>97.062500</SellPrice>
+		<EODPrice>97.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FR4</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>01/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>110.796875</BuyPrice>
+		<SellPrice>110.750000</SellPrice>
+		<EODPrice>110.750000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828XL9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00375</Rate>
+		<MaturityDate>07/15/2025</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>98.062500</BuyPrice>
+		<SellPrice>98.031250</SellPrice>
+		<EODPrice>98.031250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828N71</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>01/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.281250</BuyPrice>
+		<SellPrice>99.250000</SellPrice>
+		<EODPrice>99.250000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FS2</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02</Rate>
+		<MaturityDate>01/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>109.437500</BuyPrice>
+		<SellPrice>109.375000</SellPrice>
+		<EODPrice>109.375000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S50</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00125</Rate>
+		<MaturityDate>07/15/2026</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>95.609375</BuyPrice>
+		<SellPrice>95.562500</SellPrice>
+		<EODPrice>95.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V49</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00375</Rate>
+		<MaturityDate>01/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.921875</BuyPrice>
+		<SellPrice>96.875000</SellPrice>
+		<EODPrice>96.875000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PS1</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02375</Rate>
+		<MaturityDate>01/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>113.578125</BuyPrice>
+		<SellPrice>113.531250</SellPrice>
+		<EODPrice>113.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282L3</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00375</Rate>
+		<MaturityDate>07/15/2027</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.046875</BuyPrice>
+		<SellPrice>97.000000</SellPrice>
+		<EODPrice>96.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283R9</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0050</Rate>
+		<MaturityDate>01/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.562500</BuyPrice>
+		<SellPrice>97.531250</SellPrice>
+		<EODPrice>97.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PV4</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0175</Rate>
+		<MaturityDate>01/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>109.062500</BuyPrice>
+		<SellPrice>109.000000</SellPrice>
+		<EODPrice>108.968750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FD5</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.03625</Rate>
+		<MaturityDate>04/15/2028</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.843750</BuyPrice>
+		<SellPrice>126.718750</SellPrice>
+		<EODPrice>126.718750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810PZ5</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.025</Rate>
+		<MaturityDate>01/15/2029</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>117.312500</BuyPrice>
+		<SellPrice>117.218750</SellPrice>
+		<EODPrice>117.187500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FH6</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.03875</Rate>
+		<MaturityDate>04/15/2029</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>131.671875</BuyPrice>
+		<SellPrice>131.562500</SellPrice>
+		<EODPrice>131.531250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810FQ6</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.03375</Rate>
+		<MaturityDate>04/15/2032</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>133.218750</BuyPrice>
+		<SellPrice>133.031250</SellPrice>
+		<EODPrice>133.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QF8</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>02/15/2040</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>125.312500</BuyPrice>
+		<SellPrice>125.062500</SellPrice>
+		<EODPrice>124.906250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QP6</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.02125</Rate>
+		<MaturityDate>02/15/2041</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>126.140625</BuyPrice>
+		<SellPrice>125.937500</SellPrice>
+		<EODPrice>125.812500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810QV3</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>02/15/2042</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>97.140625</BuyPrice>
+		<SellPrice>96.968750</SellPrice>
+		<EODPrice>96.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RA8</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00625</Rate>
+		<MaturityDate>02/15/2043</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>94.062500</BuyPrice>
+		<SellPrice>93.968750</SellPrice>
+		<EODPrice>93.843750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RF7</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01375</Rate>
+		<MaturityDate>02/15/2044</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>110.968750</BuyPrice>
+		<SellPrice>110.812500</SellPrice>
+		<EODPrice>110.656250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RL4</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.0075</Rate>
+		<MaturityDate>02/15/2045</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>96.343750</BuyPrice>
+		<SellPrice>96.187500</SellPrice>
+		<EODPrice>96.062500</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RR1</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>02/15/2046</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.328125</BuyPrice>
+		<SellPrice>102.250000</SellPrice>
+		<EODPrice>102.093750</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810RW0</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.00875</Rate>
+		<MaturityDate>02/15/2047</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.250000</BuyPrice>
+		<SellPrice>99.187500</SellPrice>
+		<EODPrice>99.000000</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912810SB5</Cusip>
+		<SecurityType>TIPS</SecurityType>
+		<Rate>0.01</Rate>
+		<MaturityDate>02/15/2048</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>102.546875</BuyPrice>
+		<SellPrice>102.468750</SellPrice>
+		<EODPrice>102.281250</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828S84</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.02112102065</Rate>
+		<MaturityDate>07/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>0.000000</BuyPrice>
+		<SellPrice>100.021989</SellPrice>
+		<EODPrice>100.022274</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828T75</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.0210804655</Rate>
+		<MaturityDate>10/31/2018</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.091266</BuyPrice>
+		<SellPrice>100.085745</SellPrice>
+		<EODPrice>100.082064</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828V64</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.02077630005</Rate>
+		<MaturityDate>01/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.131177</BuyPrice>
+		<SellPrice>100.121862</SellPrice>
+		<EODPrice>100.115653</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>912828X54</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.02006657945</Rate>
+		<MaturityDate>04/30/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.111656</BuyPrice>
+		<SellPrice>100.094370</SellPrice>
+		<EODPrice>100.098691</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128282M1</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.01996518975</Rate>
+		<MaturityDate>07/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.110765</BuyPrice>
+		<SellPrice>100.099619</SellPrice>
+		<EODPrice>100.088476</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283B4</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.01984352065</Rate>
+		<MaturityDate>10/31/2019</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.075010</BuyPrice>
+		<SellPrice>100.061378</SellPrice>
+		<EODPrice>100.054564</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128283T5</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.0193568552</Rate>
+		<MaturityDate>01/31/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>99.987344</BuyPrice>
+		<SellPrice>99.983319</SellPrice>
+		<EODPrice>99.987344</EODPrice>
+	</Security>
+
+	<Security>
+		<PriceDate>2018-06-19</PriceDate>
+		<Cusip>9128284K3</Cusip>
+		<SecurityType>MARKET BASED FRN</SecurityType>
+		<Rate>0.01969143975</Rate>
+		<MaturityDate>04/30/2020</MaturityDate>
+		<CallDate></CallDate>
+		<BuyPrice>100.014220</BuyPrice>
+		<SellPrice>100.009586</SellPrice>
+		<EODPrice>100.004951</EODPrice>
+	</Security>
+
+</Prices>
+
+</bpd:FedInvestPriceData>
