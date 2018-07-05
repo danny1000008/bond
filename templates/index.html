@@ -14,6 +14,9 @@
 				var myDate = new Date();
 				var addMonths = (myDate.getMonth() + (3 * i)) % 12;
 				console.log("addMonths=" + addMonths);
+				if (myDate.getMonth() + (3 * i) >= 12) {
+					myDate.setYear(myDate.getFullYear() + 1);
+				}
 				myDate.setMonth(addMonths);
 				// Consider using a template literal here
 				var newConExp = [arrFrontContract[myDate.getMonth()],
