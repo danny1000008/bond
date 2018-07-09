@@ -1,6 +1,18 @@
+import unittest
+import bond
+from datetime import date
+
+class test_bond_methods(unittest.TestCase):
+    def test_yield(self):
+        settle_date=date(2018,7,5)
+        b1=bond.bond(date(2020,6,30), settle_date, 0.025, 2)
+        self.assertEqual(b1.bond_yield(99.914), 2.545)
+
 def main():
-    stlDate=date(2017,10,4)
-    b1=bond(0.01625,2,date(2019,6,30),stlDate)
+    settle_date=date(2018,7,5)
+    b1=bond.bond(date(2020,6,30), settle_date, 0.025, 2)
+    return b1.bond_yield()
+    '''
     b2=bond(0.0175,2,date(2021,11,30),stlDate)
     b3=bond(0.025,2,date(2024,5,15),stlDate)
     b4=bond(0.0175,2,date(2019,9,30),stlDate)
@@ -49,6 +61,6 @@ def main():
     print('b7 yield',b7.byld(100))
     print('b8 CF',b8.getCF(date(2017,12,1), 2))
     print('b8 yield',b8.byld(100))
-
+    '''
 if __name__=="__main__":
-    main()
+    unittest.main()

@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 # Can we rename this class name to follow Python conventions?
 class bond:
-    def __init__(self, maturity_date, settle_date, coupon = None, coupon_frequency = None):
+    def __init__(self, maturity_date, settle_date, coupon = None, coupon_frequency = 2):
         self.maturity_date = maturity_date
         self.settle_date = settle_date
         self.settle_date = self._get_weekday()
@@ -123,7 +123,7 @@ class bond:
         interest = self.coupon / 2 * (days_of_interest / (1.0 * days_in_period)) * 100
         return interest
 
-    def byld(self, price):
+    def bond_yield(self, price):
         '''
         Returns the yield to maturity of the bond, given a price
         '''
