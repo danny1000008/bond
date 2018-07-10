@@ -1,3 +1,6 @@
 flask
-urllib3
+#urllib3
+requests
 certifi
+datetime.date, datetime.timedelta
+xmltodict

@@ -14,7 +14,7 @@ class Basket(list):
     def __init__(self, name = '', val = list()):
         self.name = name
         self.value = val
-        self.settle_date = self.get_latest_stl_date()
+        self.settle_date = self.get_latest_settle_date()
         self.futures_contract = ''
         self.futures_expiration = '' #futures expiration (e.g., Jun 2018)
         self.list_CUSIPs = []
@@ -210,6 +210,9 @@ class Basket(list):
         return min_mat, max_mat
 
     def add_if_not_when_issued_or_dup(self, security):
+        '''
+        Add securities that satisfy specs to self.value, self.list_CUSIPs.
+        '''
         if len(security["interestRate"]) > 0 and not (security["cusip"] in self.list_CUSIPs):
             ust_mat_date = self.get_maturity_date(security)
             time_to_maturity = (ust_mat_date - date.today()).days / 365.25
@@ -224,8 +227,10 @@ class Basket(list):
 
     # This method doesn't return a basket. How might you rename it to
     # better reflect what it actually does?
-    def define_basket(self, futures_contract = 'TU', futures_expiration = 'Jun 2018'):
+    def define_basket(self, futures_contract = 'TU', futures_expiration = 'Sep 2018'):
         '''
+        Fill self.value, self.list_CUSIPs with securities that pass futures contracts specifications.
+
         Goes through the list of UST securities gotten previously from the get_web_page method, and generates a list
         of securities eligible to be delivered into the UST futures contract (passed to the method as futures_contract), which is stored in self.value
         '''
@@ -260,7 +265,7 @@ class Basket(list):
         then returns closing price of US Treasury security identified by cusip.
         Closing price files are in the static\closePx folder.
         '''
-        f_name = self.get_stl_file_path(self.settle_date)
+        f_name = self.get_settlement_price_file_path(self.settle_date)
         #try:
         f_pipe = open(f_name, 'r')
         #except:
@@ -275,39 +280,46 @@ class Basket(list):
                     result = (float(sec['BuyPrice']) + float(sec['SellPrice'])) / 2
         return round(result, 3)
 
-    def get_stl_file_path(self, dt):
+    def get_settlement_price_file_path(self, settle_date):
+        '''
+        Return path/filename of most recent price file in static/closePx folder.
+
+        '''
         cwd = os.getcwd()
         os_platform = os.name
         if os_platform == 'nt': # case Windows (my dev env)
-            return ''.join([cwd, '\static\closePx\securityprice.', str(dt), '.xml'])
+            return ''.join([cwd, '\static\closePx\securityprice.', str(settle_date), '.xml'])
         else: # case Linux (my production env)
             if 'public' in cwd:
-                return ''.join([cwd, '/static/closePx/securityprice.', str(dt), '.xml'])
-            else: return ''.join([cwd, '/public/static/closePx/securityprice.', str(dt), '.xml'])
+                return ''.join([cwd, '/static/closePx/securityprice.', str(settle_date), '.xml'])
+            else: return ''.join([cwd, '/public/static/closePx/securityprice.', str(settle_date), '.xml'])
 
-    def get_last_close_date(self, dt = date.today()):
-        last_bus_day = dt
-        if dt.weekday() >= 1 and dt.weekday() <= 5: # Tuesday - Saturday
-            last_bus_day = dt - timedelta(days = 1)
-        elif dt.weekday() == 0: # Monday
-            last_bus_day = dt - timedelta(days = 3)
+    def get_last_close_date(self, close_date = date.today()):
+        '''
+        Return the last business day before close_date.
+        '''
+        last_business_day = close_date
+        if close_date.weekday() >= 1 and close_date.weekday() <= 5: # Tuesday - Saturday
+            last_business_day = close_date - timedelta(days = 1)
+        elif close_date.weekday() == 0: # Monday
+            last_business_day = close_date - timedelta(days = 3)
         else:
-            last_bus_day = dt - timedelta(days = 2) # Sunday
-        return last_bus_day
+            last_business_day = close_date - timedelta(days = 2) # Sunday
+        return last_business_day
 
-    def get_latest_stl_date(self, dt = date.today()):
+    def get_latest_settle_date(self, settle_date = date.today()):
         '''
         Returns the date of the most recent settlement prices file in the
         static/closePx folder.
         '''
-        f_name = self.get_stl_file_path(dt)
+        f_name = self.get_settlement_price_file_path(settle_date)
         while not os.path.isfile(f_name):
             # currently we don't have settlement prices before June 2018
-            if dt < date(2018, 6, 1):
+            if settle_date < date(2018, 6, 1):
                 break
-            dt = self.get_last_close_date(dt)
-            f_name = self.get_stl_file_path(dt)
-        return dt
+            settle_date = self.get_last_close_date(settle_date)
+            f_name = self.get_settlement_price_file_path(settle_date)
+        return settle_date
 
-    def set_stl_date(self, dt):
-        self.settle_date = dt
+    def set_stl_date(self, settle_date):
+        self.settle_date = settle_date
