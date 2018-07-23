@@ -2,34 +2,9 @@
 <html>
 <head>
 	<title>Home</title>
-	<script>
-		// Will this function do the right thing during the month of July?
-		function getFutConExp() {
-			// once futures contract is chosen, update contract expiration select
-			let expBox = document.getElementById("expiration");  // ending semicolons are unnecessary if you stick with one statement per line
-			// What can you do to eliminate this unnecessary repetition?
-			const arrFrontContract = ["Mar", "Mar", "Mar", "Jun", "Jun", "Jun",
-				"Sep", "Sep", "Sep", "Dec", "Dec", "Dec"];
-			for (var i = 0; i <= 2; i++) {
-				var myDate = new Date();
-				var addMonths = (myDate.getMonth() + (3 * i)) % 12;
-				console.log("addMonths=" + addMonths);
-				if (myDate.getMonth() + (3 * i) >= 12) {
-					myDate.setYear(myDate.getFullYear() + 1);
-				}
-				myDate.setMonth(addMonths);
-				// Consider using a template literal here
-				var newConExp = [arrFrontContract[myDate.getMonth()],
-					myDate.getFullYear()].join(" ");
-				var newOpt = document.createElement("option");
-				newOpt.text = newConExp;
-				expBox.add(newOpt);
-			}
-		}
-	</script>
 </head>
 <link rel=stylesheet type=text/css href="{{ url_for('static',filename='style.css') }}">
-<body onload="getFutConExp()">
+<body onload="getFuturesContractExpiration()">
 <h1>CME US Treasury Futures</h1>
 <h2>Pick a contract and expiration</h2>
 <div>
@@ -64,3 +39,29 @@ initial term to maturity and remaining time to maturity.
 </div>
 
 <!-- Can we make this page well-formed? -->
+<script>
+	// Will this function do the right thing during the month of July?
+	function getFuturesContractExpiration() {
+		// once futures contract is chosen, update contract expiration select
+		let expBox = document.getElementById("expiration");  // ending semicolons are unnecessary if you stick with one statement per line
+		// What can you do to eliminate this unnecessary repetition?
+		const arrFrontContract = ["Mar", "Mar", "Mar", "Jun", "Jun", "Jun",
+			"Sep", "Sep", "Sep", "Dec", "Dec", "Dec"];
+		for (var i = 0; i <= 2; i++) {
+			var myDate = new Date();
+			var addMonths = (myDate.getMonth() + (3 * i)) % 12;
+			console.log("addMonths=" + addMonths);
+			if (myDate.getMonth() + (3 * i) >= 12) {
+				myDate.setYear(myDate.getFullYear() + 1);
+			}
+			myDate.setMonth(addMonths);
+			// Consider using a template literal here
+			var newConExp = [arrFrontContract[myDate.getMonth()],
+				myDate.getFullYear()].join(" ");
+			var newOpt = document.createElement("option");
+			newOpt.text = newConExp;
+			expBox.add(newOpt);
+		}
+	}
+</script>
+</body></html>

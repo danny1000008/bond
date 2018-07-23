@@ -3,10 +3,62 @@ import bond
 from datetime import date
 
 class test_bond_methods(unittest.TestCase):
-    def test_yield(self):
-        settle_date=date(2018,7,5)
-        b1=bond.bond(date(2020,6,30), settle_date, 0.025, 2)
-        self.assertEqual(b1.bond_yield(99.914), 2.545)
+    def test_yield5(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,6,15)
+        b1=bond.bond(expiration_date, settle_date, 0.015, 2)
+        self.assertEqual(round(b1.bond_yield(98), 3), 2.566)
+
+    def test_yield1(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,6,30)
+        b1=bond.bond(expiration_date, settle_date, 0.025, 2)
+        self.assertEqual(round(b1.bond_yield(99.875), 3), 2.565)
+
+
+    def test_yield9(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,6,30)
+        b1=bond.bond(expiration_date, settle_date, 0.01625, 2)
+        self.assertEqual(round(b1.bond_yield(98.188), 3), 2.571)
+
+    def test_yield4(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,7,15)
+        b1=bond.bond(expiration_date, settle_date, 0.015, 2)
+        self.assertEqual(round(b1.bond_yield(97.906), 3), 2.572)
+
+    def test_yield8(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,7,31)
+        b1=bond.bond(expiration_date, settle_date, 0.01625, 2)
+        self.assertEqual(round(b1.bond_yield(98.094), 3), 2.58)
+
+    def test_yield3(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,8,15)
+        b1=bond.bond(expiration_date, settle_date, 0.015, 2)
+        self.assertEqual(round(b1.bond_yield(97.812), 3), 2.576)
+
+    def test_yield7(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,8,31)
+        b1=bond.bond(expiration_date, settle_date, 0.01375, 2)
+        self.assertEqual(round(b1.bond_yield(97.469), 3), 2.596)
+
+    def test_yield2(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,9,15)
+        b2=bond.bond(expiration_date, settle_date, 0.01375, 2)
+        self.assertEqual(round(b2.bond_yield(97.406), 3), 2.604)
+
+    def test_yield6(self):
+        settle_date=date(2018,7,9)
+        expiration_date = date(2020,9,30)
+        b1=bond.bond(expiration_date, settle_date, 0.01375, 2)
+        self.assertEqual(round(b1.bond_yield(97.375), 3), 2.595)
+
+
 
 def main():
     settle_date=date(2018,7,5)
