@@ -5,8 +5,6 @@ import requests
 from datetime import date, timedelta
 import json  # Can we group all standard library imports at the top?
 import os.path
-import urllib3
-import certifi
 import xmltodict
 import bond
 
@@ -70,17 +68,11 @@ class Basket(list):
 
     def get_web_page(self, sec = "Note"):
         '''
-        Uses urllib3 to get and return a list of UST securities (either notes or bonds) from treasurydirect.gov's API
+        Uses requests library to get and return a list of UST securities (either notes or bonds) from treasurydirect.gov's API
         '''
-        # Have you used the requests library? It is a higher level library than
-        # urllib3.
-        # Consider using string concatenation to create the URL string.
-        # Consider returning a string instead of bytes.
         payload = {'format': 'json', 'type': sec}
         req = requests.get('https://www.treasurydirect.gov/TA_WS/securities/search', params = payload)
         return req
-        #url_obj = urllib3.PoolManager(cert_reqs = "CERT_REQUIRED", ca_certs = certifi.where())
-        #return url_obj.request("GET", ''.join(["https://www.treasurydirect.gov/TA_WS/securities/search?format=json&type=", sec]))
 
     def get_specs(self, futures_contract):
         '''
