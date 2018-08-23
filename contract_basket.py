@@ -210,7 +210,7 @@ class Basket(list):
             time_to_maturity = (ust_mat_date - date.today()).days / 365.25
             time_to_maturity = str('%.2f' % time_to_maturity)
             price = self.get_bond_prices(security['cusip'])
-            new_bond = bond.bond(ust_mat_date, self.settle_date, float(security['interestRate']) / 100, 2)
+            new_bond = bond.Bond(ust_mat_date, self.settle_date, float(security['interestRate']) / 100, 2)
             self.value.append({'mat_date': ''.join([security["maturityDate"][0:10]]), 'int_rate': round(float(security["interestRate"]), 3), \
                  'cpns_per_yr': 2, 'ttm': time_to_maturity, 'cusip': security["cusip"], 'issue_date': security['issueDate'][0:10], \
                  'yield': new_bond.bond_yield(price), 'price': price})
