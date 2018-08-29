@@ -2,8 +2,7 @@
 # written by Danny Wagstaff 9/2017
 from datetime import date, timedelta
 
-# Can we rename this class name to follow Python conventions?
-class bond:
+class Bond:
     def __init__(self, maturity_date, settle_date, coupon = None, coupon_frequency = 2):
         self.maturity_date = maturity_date
         self.settle_date = settle_date
@@ -76,9 +75,9 @@ class bond:
         #cpnNPlus1 = new_date;
         while new_date > settle_date:
             new_date -= timedelta(days = 185)
-            new_date = date(new_date.year, new_date.month, self.get_coupon_day_of_month(new_date.month))
+            new_date = date(new_date.year, new_date.month, self._get_coupon_day_of_month(new_date.month))
         new_date += timedelta(days = 180)
-        new_date = date(new_date.year, new_date.month, self.get_coupon_day_of_month(new_date.month))
+        new_date = date(new_date.year, new_date.month, self._get_coupon_day_of_month(new_date.month))
         return new_date
 
     def previous_coupon(self, settle_date):
@@ -88,20 +87,20 @@ class bond:
         bond_coupon_next = self.next_coupon(settle_date)
         coupon_previous = date(bond_coupon_next.year - 1, bond_coupon_next.month, bond_coupon_next.day)
         return self.next_coupon(coupon_previous)
+        def get_number_of_coupons(self, settle_date = self.settle_date, basis = 'A/A'):
+            '''
+            Returns number of coupons remaining after settle_date
+            '''
 
-    def get_number_of_coupons(self, basis = 'A/A'):
-        '''
-        Returns number of coupons remaining after self.settle_date
-        '''
         count = 0
-        bond_coupon_next = self.next_coupon(self.settle_date)
+        bond_coupon_next = self.next_coupon(settle_date)
         while bond_coupon_next < self.maturity_date:
             count += 1
             bond_coupon_next = self.next_coupon(bond_coupon_next + timedelta(1))
         #print('count=', count + 1)
         return count + 1
 
-    def get_coupon_day_of_month(self, month):
+    def _get_coupon_day_of_month(self, month):
         '''
         Returns the day of the month that a coupon payment will be made
         (typically the 15th or the last day of the month)
@@ -120,7 +119,7 @@ class bond:
         date_of_prev_coupon = self.previous_coupon(self.settle_date)
         days_in_period = (self.next_coupon(self.settle_date) - date_of_prev_coupon).days
         days_of_interest = (self.settle_date - date_of_prev_coupon).days
-        interest = self.coupon / 2 * (days_of_interest / (1.0 * days_in_period)) * 100
+        interest = self.coupon / self.coupon_frequency * (days_of_interest / (1.0 * days_in_period)) * 100
         return interest
 
     def bond_yield(self, price):
@@ -149,11 +148,11 @@ class bond:
                 P_new = P_new + (1 + r_old / 2.0) ** (1 - j - year_fraction)
                 dP_new = dP_new + (1 - j - year_fraction) / 2.0 * (1 + r_old / 2.0) ** \
                     (-j - year_fraction)
-            P_new = P_new * 50 * self.coupon # same as 100 * cpn / 2
+            P_new = P_new * 100 * self.coupon / self.coupon_frequency
             P_new = P_new + 100 * (1 + r_old / 2.0) ** (1 - number_of_coupons - year_fraction)
             P_new = P_new - interest
             delta_F = P_new - P_init
-            dP_new = dP_new * 50 * self.coupon # same as 100 * cpn / 2
+            dP_new = dP_new * 100 * self.coupon / self.coupon_frequency
             dP_new = dP_new + 50 * (1 - number_of_coupons - year_fraction) * (1 + r_old / 2.0) ** \
                 (-number_of_coupons - year_fraction)
             r_new = r_old - delta_F / dP_new
