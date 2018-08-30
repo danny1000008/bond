@@ -1,11 +1,17 @@
 # bond.py
 Defines classes for generic fixed-income bonds, US Treasury bonds, and US Treasury futures.
 
-## Motivation
-1. I wanted to build a project to develop my skills as a software developer.
-2. I noticed that there wasn't any way to see the "basket" of US Treasury securities that are deliverable into a US Treasury futures contract, outside of a Bloomberg terminal, or other high-priced market data applications.
-
 ## Getting Started
+  1. Create a directory to download repository into.
+  2. Download the repo (git clone https://github.com/danny1000008/bond.git)
+  3. Set up a Python 3.x virtual environment.
+  4. Install dependencies: `pip install -r requirements.txt`
+  5. Run the program: `python main.py` This starts the Flask web server.
+  6. Open a web browser and go to [localhost:5000](localhost:5000).
+
+## Prerequisites
+  1. Python 3.x
+  2. Packages from requirements.txt, either installed globally or in a virtual environment.
 
 ## Bond, US Treasury, and US Treasury futures classes
 
@@ -17,6 +23,8 @@ python main.py
 
 ## How to run tests
 no tests yet
+
+## Classes, properties, methods
 
 ### 1. Bond - class that defines a coupon-paying, fixed-income bond, with
       A. Properties
@@ -66,3 +74,7 @@ no tests yet
            listed in mat_dates.
         4. bimprepo(qtdPrice, futPrice, delDate) - returns the implied repo rate of
            a contract.
+
+## Motivation
+  1. I wanted to build a project to develop my skills as a software developer, particularly in Python.
+  2. I noticed that there wasn't any way to see the "basket" of US Treasury securities that are deliverable into a US Treasury futures contract, outside of a Bloomberg terminal, or other high-priced market data applications.
